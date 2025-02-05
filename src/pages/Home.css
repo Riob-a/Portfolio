@@ -1,0 +1,231 @@
+/* HomePage.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo+Black&family=Lilita+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rowdies:wght@300;400;700&family=Spicy+Rice&family=Unbounded:wght@200..900&display=swap');
+
+/* fonts */
+
+h1 {
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h3 {
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h4 {
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h5 {
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+h6{
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+p1 {
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+}
+
+p {
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+}
+
+.unbounded-uniquifier-p2 {
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 150;
+  font-style: normal;
+}
+
+.list-group-item {
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+}
+
+.card-link {
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+}
+
+.button {
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.list{
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+}
+.navbar{
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* header */
+
+#home {
+  /* background-image: url('https://i.pinimg.com/originals/9c/14/86/9c14863b9e64ffc65cdfda4cdc9a0b99.gif'); */
+  background: linear-gradient(45deg, #a5d8f1, #085982, #0b426b );
+  background-size: 400% 400%;
+  animation: gradientWave 15s ease infinite;
+  transition: background-color 0.3s, color 0.3s;
+  background-position: center;
+  background-repeat: repeat;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  height: 450px;
+  width: auto;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  position: relative;
+  /* Allows positioning of child elements */
+  padding-top: 100px;
+}
+body.dark #home{
+  background: linear-gradient(45deg, #2a4961, #042f4f, #021d33 );
+  background-size: 400% 400%;
+  animation: gradientWave 15s ease infinite;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#home h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  margin-top: 20px;
+}
+
+#home p {
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
+  color: #b4ef7c;
+}
+
+@keyframes gradientWave {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  25% {
+    background-position: 50% 25%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  75% {
+    background-position: 50% 75%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* theme button */
+.floating-theme-button {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+  margin-bottom: 50px;
+  margin-left: 20px;
+}
+
+.floating-theme-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* https://i.pinimg.com/originals/a6/0f/8a/a60f8a0a11b0127c48b17951bbe746d2.gif */
+.about {
+  height: 650px;
+}
+
+#projects {
+  align-content: center;
+}
+
+.project-card {
+  max-width: 90%;
+  margin: auto;
+  padding: 10px;
+}
+
+@media (min-width: 1024px) {
+  .project-card {
+    max-width: 100%;
+    /* Wider cards on large screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    max-width: 100%;
+    /* Full width on mobile */
+  }
+}
+#contact{
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+.slick-slider {
+  max-width: 90%;
+  margin: 0 auto;
+}

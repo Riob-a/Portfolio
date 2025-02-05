@@ -1,0 +1,9 @@
+.header {
+    background: url('header-image.jpg') no-repeat center center / cover;
+    height: 400px; /* Adjust as needed */
+    mask-image: url('mask.png'); /* Use a PNG with transparency */
+    -webkit-mask-image: url('mask.png'); /* For WebKit browsers */
+    mask-size: cover;
+    -webkit-mask-size: cover;
+  }
+  

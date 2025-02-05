@@ -1,0 +1,164 @@
+body.light {
+  background: linear-gradient(45deg, #cf1212, #e95456fb, #4A89E8 , #33D1C8);
+  background-size: 400% 400%;
+  animation: gradientWave 15s ease infinite;
+  transition: background-color 0.3s, color 0.3s;
+
+}
+
+body.dark {
+  background: linear-gradient(45deg, #8E706A, #755B6B, #0F3A90, #008888);
+  background-size: 400% 400%;
+  animation: gradientWave 15s ease infinite;
+  color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Gradient wave animation keyframes */
+@keyframes gradientWave {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  25% {
+    background-position: 50% 25%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  75% {
+    background-position: 50% 75%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body.light h1 {
+  color: #b4ef7c;
+  transition: background-color 0.3s, color 0.3s;
+
+}
+
+body.dark h1 {
+  color: #17a2b8;
+  transition: background-color 0.3s, color 0.3s;
+
+}
+body.light h2 {
+  color: #17a2b8;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark h2 {
+  color: #b4ef7c;
+  transition: background-color 0.3s, color 0.3s;
+}
+body.light .card {
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Card styles for dark mode */
+body.dark .card {
+  background-color: #212529;
+  /* Dark background for dark theme */
+  color: #ffffff;
+  /* Light text for dark theme */
+  box-shadow: 0px 5px 10px #000000b3;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light .card .list-group-item {
+  background-color: #ffffff;
+  /* White background */
+  color: #000000;
+  /* Dark text */
+  border-color: #00000020;
+  /* Default Bootstrap border */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark .card .list-group-item {
+  background-color: #212529;
+  /* Dark background */
+  color: #ffffff;
+  /* Light text */
+  border-color: #ffffff20;
+  /* Adjusted border color */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.list-group-item {
+  border: none !important;
+}
+
+body.dark #contact {
+  background-color: #212529;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light #contact {
+  background-color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark #skills {
+  background-color: #212529;
+  transition: background-color 0.3s, color 0.3s;
+}
+body.light #skills {
+  background-color: #ffffff;
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+/* Light mode */
+body.light .carousel-indicators button {
+  background-color: #212529;
+  /* Dark indicators for light mode */
+  opacity: 0.5;
+  /* Slightly transparent */
+}
+
+body.light .carousel-indicators button.active {
+  background-color: #212529;
+  /* Fully dark for active indicator */
+  opacity: 1;
+}
+
+body.dark .carousel-indicators button {
+  background-color: #ffffff;
+  /* White indicators for dark mode */
+  opacity: 0.5;
+}
+
+body.dark .carousel-indicators button.active {
+  background-color: #f8f9fa;
+  /* Light gray for active indicator */
+  opacity: 1;
+}
+
+/* Light Mode */
+body.light .carousel-control-prev-icon,
+body.light .carousel-control-next-icon {
+  filter: invert(1);
+  /* Default dark arrows */
+}
+
+/* Dark Mode */
+body.dark .carousel-control-prev-icon,
+body.dark .carousel-control-next-icon {
+  filter: invert(0);
+  /* Invert to white for dark mode */
+}
