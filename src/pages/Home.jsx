@@ -63,7 +63,7 @@ function Home() {
                 {theme === "light" ? <MdOutlineDarkMode size={24} /> : <MdOutlineLightMode size={24} />}
             </Button>
             <header>
-                <section id="home" className="text-white text-center  mb-5 mt-2" data-aos="fade-up" data-aos-delay="200" >
+                <section id="home" className="text-center  mb-5 mt-2" data-aos="zoom-in" data-aos-duration="500" >
                     <div className="container">
                         <NavigationBar />
                         <h1>Welcome to my Portfolio</h1>
@@ -74,7 +74,7 @@ function Home() {
 
             <section id="about">
                 <Row className="p-1 m-1 d-flex align-items-stretch">
-                    <Col md={6} className="d-flex" data-aos="fade-up" data-aos-delay="100">
+                    <Col md={6} className="d-flex" data-aos="fade-up" data-aos-delay="100" >
                         <Card className=" mt-5 mb-5 rounded-5 flex-fill">
                             <Card.Body>
                                 <Card.Title><h2>About Me</h2></Card.Title>
@@ -142,7 +142,7 @@ function Home() {
                         <Carousel.Item>
                             <div className="py-4">
                                 <h3>Backend</h3>
-                                <p>Node.js, Flask, PostgreSQL</p>
+                                <p> Flask, PostgreSQL</p>
                             </div>
                         </Carousel.Item>
 
@@ -150,7 +150,7 @@ function Home() {
                         <Carousel.Item>
                             <div className="py-4">
                                 <h3>Tools</h3>
-                                <p>Git, Render, CI/CD, Vercel</p>
+                                <p>Git, Render, CI/CD, Vercel, Cloudinary</p>
                             </div>
                         </Carousel.Item>
                     </Carousel>
@@ -163,7 +163,6 @@ function Home() {
                 <Container data-aos="fade-up" data-aos-delay="300">
                     <Row className=" mb-4 text-center">
                         <h1>Projects</h1>
-                        <p>Projects I have accomplished</p>
                     </Row>
                     <Slider {...settings}>
                         {/* Project 1 */}
@@ -179,11 +178,12 @@ function Home() {
                                         <li>Allows user to like and submit artwork</li>
                                         <li>Allows user to view and edit their profile</li>
                                     </ul>
-                                    <Card.Text as="h5" className="text-center">Tech used</Card.Text>
+                                    <Card.Text as="h5" className="text-center">Tools</Card.Text>
                                     <ListGroup>
                                         <ListGroup.Item><FaReact /> React</ListGroup.Item>
-                                        <ListGroup.Item><FaPython /> Python/Flask</ListGroup.Item>
-                                        <ListGroup.Item><FaJsSquare /> JavaScript</ListGroup.Item>
+                                        <ListGroup.Item><FaPython /> Flask Debug</ListGroup.Item>
+                                        <ListGroup.Item> Axios</ListGroup.Item>
+                                        <ListGroup.Item> Cloudinary</ListGroup.Item>
                                     </ListGroup>
                                     <br />
                                     <Card.Text as="h6" className="text-center"><FaGithub /> Github Links<br />
@@ -209,11 +209,10 @@ function Home() {
                                         <li>Allows user to donate</li>
                                         <li>Facilitates creation of a charity</li>
                                     </ul>
-                                    <Card.Text as="h5" className="text-center">Tech used</Card.Text>
+                                    <Card.Text as="h5" className="text-center">Tools</Card.Text>
                                     <ListGroup>
                                         <ListGroup.Item><FaReact /> React</ListGroup.Item>
                                         <ListGroup.Item><FaPython /> Python/Flask</ListGroup.Item>
-                                        <ListGroup.Item><FaJsSquare /> JavaScript</ListGroup.Item>
                                     </ListGroup>
                                     <br />
                                     <Card.Text as="h6" className="text-center"><FaGithub /> Github Links<br />
@@ -239,7 +238,7 @@ function Home() {
                                         <li>Facilitates adding books to a wishlist</li>
                                         <li>Allows user to view and edit their profile</li>
                                     </ul>
-                                    <Card.Text as="h5" className="text-center">Tech used</Card.Text>
+                                    <Card.Text as="h5" className="text-center">Tools</Card.Text>
                                     <ListGroup>
                                         <ListGroup.Item><FaReact /> React</ListGroup.Item>
                                         <ListGroup.Item><FaJsSquare /> JavaScript</ListGroup.Item>
@@ -266,7 +265,7 @@ function Home() {
                         <p className="m-4">
                             <FaLinkedin className="me-2" />: <a href="https://www.linkedin.com/in/derrick-r-ongwae-1530142bb/" className="me-2">Derrick Ongwae</a>
                             <FaGithub className="me-2" />: <a href="https://github.com/Riob-a" className="me-2">Riob-a</a>
-                            <FaPhone className="me-2" />: <a href="blank" className="me-2">+254 71233 9792</a></p>
+                            <FaPhone className="me-2" />: <a href="/" className="me-2">+254 71233 9792</a></p>
 
                         <p>Feel free to reach out for collaborations or just a friendly hello!</p>
 

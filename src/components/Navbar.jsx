@@ -14,7 +14,7 @@ function NavigationBar() {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
                 <Nav.Link href="/">Home</Nav.Link>
-                <Nav.Link href="/test">Link</Nav.Link>
+                {/* <Nav.Link href="/test">Link</Nav.Link> */}
                 <NavDropdown title="Sections" id="basic-nav-dropdown" className="custom-dropdown">
                 <NavDropdown.Item as={Link} to="about" spy={true} smooth={true} offset={-70} duration={500} className="custom-dropdown-item">
                   About
