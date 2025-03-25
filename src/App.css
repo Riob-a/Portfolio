@@ -1,5 +1,6 @@
 body.light {
-  background: linear-gradient(45deg, #cf1212, #e95456fb, #4A89E8 , #33D1C8);
+  background: linear-gradient(45deg,#fde2c0, #F7C0C4, #f6b6c5, #ed8aca, #B162F5);
+  /* background: linear-gradient(45deg,#e2b86a,#e2ac48,#ffa500, black); */
   background-size: 400% 400%;
   animation: gradientWave 15s ease infinite;
   transition: background-color 0.3s, color 0.3s;
@@ -38,7 +39,7 @@ body.dark {
 }
 
 body.light h1 {
-  color: #b4ef7c;
+  color: #17a2b8;
   transition: background-color 0.3s, color 0.3s;
 
 }
@@ -48,6 +49,7 @@ body.dark h1 {
   transition: background-color 0.3s, color 0.3s;
 
 }
+
 body.light h2 {
   color: #17a2b8;
   transition: background-color 0.3s, color 0.3s;
@@ -57,8 +59,10 @@ body.dark h2 {
   color: #b4ef7c;
   transition: background-color 0.3s, color 0.3s;
 }
+
 body.light .card {
-  background-color: #ffffff;
+  background-color: #ffffff85;
+  backdrop-filter: blur(10px);
   color: #000000;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
   border: none;
@@ -69,10 +73,10 @@ body.light .card {
 
 /* Card styles for dark mode */
 body.dark .card {
-  background-color: #212529;
-  /* Dark background for dark theme */
+  /* background-color: #212529; */
+  background-color: #21252979;
+  backdrop-filter: blur(10px);
   color: #ffffff;
-  /* Light text for dark theme */
   box-shadow: 0px 5px 10px #000000b3;
   border: none;
   border-radius: 10px;
@@ -81,7 +85,7 @@ body.dark .card {
 }
 
 body.light .card .list-group-item {
-  background-color: #ffffff;
+  background-color: #ffffff85;
   /* White background */
   color: #000000;
   /* Dark text */
@@ -91,8 +95,8 @@ body.light .card .list-group-item {
 }
 
 body.dark .card .list-group-item {
-  background-color: #212529;
-  /* Dark background */
+  background-color: #21252979;
+    /* Dark background */
   color: #ffffff;
   /* Light text */
   border-color: #ffffff20;
@@ -105,22 +109,29 @@ body.dark .card .list-group-item {
 }
 
 body.dark #contact {
-  background-color: #212529;
+  background-color: #21252979;
   transition: background-color 0.3s, color 0.3s;
 }
 
 body.light #contact {
-  background-color: #ffffff;
+  background-color: #ffffff85;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
   transition: background-color 0.3s, color 0.3s;
 }
 
 body.dark #skills {
-  background-color: #212529;
+  background-color: #21252979;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
   transition: background-color 0.3s, color 0.3s;
 }
+
 body.light #skills {
-  background-color: #ffffff;
-  transition: background-color 0.3s, color 0.3s; 
+  background-color: #ffffff85;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /* Light mode */

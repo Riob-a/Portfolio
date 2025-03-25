@@ -63,10 +63,10 @@ function Home() {
                 {theme === "light" ? <MdOutlineDarkMode size={24} /> : <MdOutlineLightMode size={24} />}
             </Button>
             <header>
-                <section id="home" className="text-center  mb-5 mt-2" data-aos="zoom-in" data-aos-duration="500" >
+                <section id="home" className="text-center  mb-5 mt-2" data-aos="zoom-in" data-aos-duration="800" >
                     <div className="container">
                         <NavigationBar />
-                        <h1>Welcome to my Portfolio</h1>
+                        <h1> Portfolio</h1>
                         <p>Full-Stack Developer | Passionate About Problem Solving & Scalable Solutions</p>
                     </div>
                 </section>
@@ -74,7 +74,7 @@ function Home() {
 
             <section id="about">
                 <Row className="p-1 m-1 d-flex align-items-stretch">
-                    <Col md={6} className="d-flex" data-aos="fade-up" data-aos-delay="100" >
+                    <Col md={6} className="d-flex" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" >
                         <Card className=" mt-5 mb-5 rounded-5 flex-fill">
                             <Card.Body>
                                 <Card.Title><h2>About Me</h2></Card.Title>
@@ -94,7 +94,7 @@ function Home() {
                         </Card>
                     </Col>
 
-                    <Col md={6} className="d-flex" data-aos="fade-up" data-aos-delay="200">
+                    <Col md={6} className="d-flex" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
                         <Card className=" mt-5 mb-5 rounded-5 flex-fill">
                             <Card.Body>
                                 <Container>
@@ -125,7 +125,7 @@ function Home() {
             {/* Skills Section py-5 mt-5 mb-5 rounded-4*/}
 
 
-            <Container className="text-center justify-content-center py-5 mt-5 mb-5 rounded-4" data-aos="fade-right" data-aos-delay="300">
+            <Container className="text-center justify-content-center py-5 mt-5 mb-5 rounded-4" data-aos="fade-right" data-aos-delay="300" data-aos-duration="800">
                 <section id="skills" className=" mt-4 mb-5 p-2 py-5 mt-5 mb-5 rounded-4">
                     <h2>Skills</h2>
                     <hr />
@@ -160,7 +160,7 @@ function Home() {
 
             {/* Projects Section */}
             <section id="projects" className="py-5 mb-5">
-                <Container data-aos="fade-up" data-aos-delay="300">
+                <Container data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
                     <Row className=" mb-4 text-center">
                         <h1>Projects</h1>
                     </Row>
@@ -257,7 +257,7 @@ function Home() {
             </section>
 
             {/* Contact Section */}
-            <Container data-aos="fade-up" data-aos-delay="500">
+            <Container data-aos="fade-up" data-aos-delay="500" >
                 <section id="contact" className="rounded-4 py-5  mt-5 mb-5">
                     <div className="container text-center" >
                         <h2>Contacts</h2>

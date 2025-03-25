@@ -103,7 +103,8 @@ p {
 
 #home {
   /* background-image: url('https://i.pinimg.com/originals/9c/14/86/9c14863b9e64ffc65cdfda4cdc9a0b99.gif'); */
-  background: linear-gradient(45deg, #a5d8f1, #085982, #0b426b );
+  background: linear-gradient(45deg, #a5d8f185, #08598281, #0b416b7b );
+  backdrop-filter: blur(10px);
   background-size: 400% 400%;
   animation: gradientWave 15s ease infinite;
   transition: background-color 0.3s, color 0.3s;
@@ -113,7 +114,7 @@ p {
   border-bottom-left-radius: 30px;
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
-  height: 450px;
+  height: 500px;
   width: auto;
   margin-right: 5px;
   margin-left: 5px;
@@ -223,6 +224,8 @@ body.dark #home{
   }
 }
 #contact{
+  background-color: #ffffff85;
+  backdrop-filter: blur(10px);
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
 }
 .slick-slider {
