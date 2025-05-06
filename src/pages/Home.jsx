@@ -3,14 +3,16 @@ import { Container, Row, Col, Card, Image, Tabs, Tab, Figure, ListGroup, Button,
 import AOS from "aos";
 import "aos/dist/aos.css";
 import NavigationBar from '../components/Navbar';
-import image1 from '../components/images/Derricks Demo.png';
-import image2 from "../components/images/fund Girls.png"
+import image1 from '../components/images/Derricks Demo 1.jpg';
+import image2 from "../components/images/Derricks Demo 2.jpg"
+import image3 from "../components/images/Derricks Demo 3.jpg"
 import readfinder1 from "../components/images/readfinder1.jpg"
 import readfinder2 from "../components/images/readfinder2.jpg"
 import blogers from '../components/images/blogers.jpg';
 import blogers2 from '../components/images/blogers2.jpg';
+import blogers3 from "../components/images/blogers3.jpg";
+import blogers4 from "../components/images/blogers4.jpg";
 
-import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 import { FaEnvelope, FaLinkedin, FaGithub, FaUser, FaFileAlt, FaPen, FaReact, FaPython, FaJsSquare } from "react-icons/fa";
 import { ThemeContext } from "../components/ThemeContenxt";
 import Slider from "react-slick";
@@ -46,7 +48,7 @@ function Home() {
             {
                 breakpoint: 1024, // Tablets and larger
                 settings: {
-                    slidesToShow: 1.5, // Show 1.5 cards (partially visible)
+                    slidesToShow: 1, // Show 1.5 cards (partially visible)
                 },
             },
             {
@@ -305,10 +307,10 @@ function Home() {
                                     <Card className="rounded-4 project-card">
                                         <Carousel>
                                             <Carousel.Item>
-                                                <img className="d-block w-100 h-75 rounded-4" src={image1} alt="Demo Screenshot 1" />
+                                                <img className="d-block w-100 rounded-4 carousel-image" src={image1} alt="Demo Screenshot 1" />
                                             </Carousel.Item>
                                             <Carousel.Item>
-                                                <img className="d-block w-100" src="" alt="Demo Screenshot 2" />
+                                                <img className="d-block w-100 rounded-4 carousel-image" src={image3} alt="Demo Screenshot 2" />
                                             </Carousel.Item>
                                         </Carousel>
                                     </Card>
@@ -364,10 +366,16 @@ function Home() {
                                     <Card className="rounded-4 project-card">
                                         <Carousel>
                                             <Carousel.Item>
-                                                <img className="d-block w-100 h-75 rounded-4" src={blogers} alt="Demo Screenshot 1" />
+                                                <img className="d-block w-100 rounded-4 carousel-image " src={blogers} alt="Demo Screenshot 1" />
                                             </Carousel.Item>
                                             <Carousel.Item>
-                                                <img className="d-block w-100" src={blogers2} alt="Demo Screenshot 2" />
+                                                <img className="d-block w-100 rounded-4 carousel-image " src={blogers2} alt="Demo Screenshot 2" />
+                                            </Carousel.Item>
+                                            <Carousel.Item>
+                                                <img className="d-block w-100 rounded-4 carousel-image "  src={blogers3} alt="Demo Screenshot 2" />
+                                            </Carousel.Item>
+                                            <Carousel.Item>
+                                                <img className="d-block w-100 rounded-4 carousel-image " src={blogers4} alt="Demo Screenshot 2" />
                                             </Carousel.Item>
                                         </Carousel>
                                     </Card>
@@ -421,10 +429,10 @@ function Home() {
                                     <Card className="rounded-4 project-card">
                                         <Carousel>
                                             <Carousel.Item>
-                                                <img className="d-block w-100 h-75 rounded-4" src={readfinder1} alt="Demo Screenshot 1" />
+                                                <img className="d-block w-100  rounded-4 carousel-image" src={readfinder1} alt="Demo Screenshot 1" />
                                             </Carousel.Item>
                                             <Carousel.Item>
-                                                <img className="d-block w-100" src={readfinder2} alt="Demo Screenshot 2" />
+                                                <img className="d-block w-100 rounded-4 carousel-image" src={readfinder2} alt="Demo Screenshot 2" />
                                             </Carousel.Item>
                                         </Carousel>
                                     </Card>
@@ -474,10 +482,10 @@ function Home() {
                                     <Card className="rounded-4 project-card">
                                         <Carousel>
                                             <Carousel.Item>
-                                                <img className="d-block w-100 h-75 rounded-4" src={image1} alt="Demo Screenshot 1" />
+                                                <img className=" d-block w-100 rounded-4 carousel-image" src={image1} alt="Demo Screenshot 1" />
                                             </Carousel.Item>
                                             <Carousel.Item>
-                                                <img className="d-block w-100" src="" alt="Demo Screenshot 2" />
+                                                <img className=" d-block w-100 rounded-4 carousel-image" src="" alt="Demo Screenshot 2" />
                                             </Carousel.Item>
                                         </Carousel>
                                     </Card>
@@ -528,10 +536,10 @@ function Home() {
                                     <Card className="rounded-4 project-card">
                                         <Carousel>
                                             <Carousel.Item>
-                                                <img className="d-block w-100 h-75 rounded-4" src={image1} alt="Demo Screenshot 1" />
+                                                <img className="d-block w-100 rounded-4 carousel-image" src={image1} alt="Demo Screenshot 1" />
                                             </Carousel.Item>
                                             <Carousel.Item>
-                                                <img className="d-block w-100" src="" alt="Demo Screenshot 2" />
+                                                <img className="d-block w-100 rounded-4 carousel-image" src="" alt="Demo Screenshot 2" />
                                             </Carousel.Item>
                                         </Carousel>
                                     </Card>

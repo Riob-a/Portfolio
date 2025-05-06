@@ -338,7 +338,11 @@ p {
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
 }
-
+.carousel-image {
+  height: 500px; 
+  object-fit: contain; 
+  width: 100%;
+}
 .badge-color {
   background-color: #71997f;
   /* color:#baca8b; */

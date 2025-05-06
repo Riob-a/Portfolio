@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { Container, Row, Col, Card, Image, Tabs, Tab, Figure, ListGroup, Button, Carousel } from "react-bootstrap";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import CardGrid from './Cards'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
