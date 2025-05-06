@@ -11,7 +11,7 @@
   padding-left: 20px;
 }
 .navbar {
-  position: absolute;
+  /* position: absolute; */
   /* Ensures it overlays the hero section */
   top: 0px;
   left: 0;

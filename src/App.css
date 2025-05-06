@@ -1,11 +1,11 @@
-body.light {
+/* body.light {
   background: linear-gradient(45deg,#fde2c0, #F7C0C4, #f6b6c5, #ed8aca, #B162F5);
-  /* background: linear-gradient(45deg,#e2b86a,#e2ac48,#ffa500, black); */
+  background: linear-gradient(45deg,#e2b86a,#e2ac48,#ffa500, black);
   background-size: 400% 400%;
   animation: gradientWave 15s ease infinite;
   transition: background-color 0.3s, color 0.3s;
 
-}
+} */
 
 body.dark {
   background: linear-gradient(45deg, #8E706A, #755B6B, #0F3A90, #008888);
@@ -38,20 +38,111 @@ body.dark {
   }
 }
 
+/* html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-weight: bold;
+  color:#fbfbc4;
+  background-color: #1a1a1b;
+} */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures full viewport height */
+}
+
+.content {
+  flex-grow: 1; /* Pushes the footer down */
+}
+
+ body{
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-weight: bold;
+  /* color:#706d42; */
+  /* color:#b4ef7c; */
+  color: #c4382c;
+  background-color: #1a1a1b;
+
+ }
+
+
+/* transpareent frosted card */
+/* .card{
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+  color: white;
+  button{
+    background: rgba(255, 255, 255, 0.15);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover{
+      background: rgba(249, 208, 74, 0.3);
+    }
+  }
+} */
+.card{
+  /* background: #71997F; */
+  background:#4d6957;
+  backdrop-filter: blur(10px);
+  border: none; 
+  color: #BACA8B;
+  .card-title{
+    color: #a33127;
+  }
+  /* .card-text {
+    text-shadow:#8a9566 1px 1px 1px;
+  } */
+  /* .card-p{
+    text-shadow:#8a9566 1px 1px 1px;
+  } */
+}
+.visit{
+    background: #4d6957;
+    color: #BACA8B;
+    /* border: 1px solid #fbfbc452; */
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover{
+      background: #baca8bbb;
+      color:#000000;
+      transform: scale(1.05);
+      transition: all 0.3s ease;
+    }
+}
+
+
 body.light h1 {
-  color: #17a2b8;
   transition: background-color 0.3s, color 0.3s;
 
 }
 
 body.dark h1 {
-  color: #17a2b8;
   transition: background-color 0.3s, color 0.3s;
 
 }
 
 body.light h2 {
-  color: #17a2b8;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -60,16 +151,14 @@ body.dark h2 {
   transition: background-color 0.3s, color 0.3s;
 }
 
-body.light .card {
+/* body.light .card {
   background-color: #ffffff85;
   backdrop-filter: blur(10px);
   color: #000000;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
-  border: none;
   border-radius: 10px;
   overflow: hidden;
   transition: background-color 0.3s, color 0.3s;
-}
+} */
 
 /* Card styles for dark mode */
 body.dark .card {
