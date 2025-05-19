@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import { Container, Row, Col, Card, Image, Tabs, Tab, Figure, ListGroup, Button, Carousel  } from "react-bootstrap";
+import { Container, Row, Col, Card, Image, Tabs, Tab, Figure, ListGroup, Button, Carousel } from "react-bootstrap";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import NavigationBar from '../components/Navbar';
@@ -74,7 +74,10 @@ function Home() {
 
             <Row className="header-section mb-5 mt-5">
                 <Col className="header-text" data-aos="fade-up" data-aos-duration="800" data-aos-delay="" >
-                    {svg} {svg} {svg} {svg} {svg} {svg}
+                    {/* {svg} {svg} {svg} {svg} {svg} {svg} */}
+                    <Card className="intro-sidebar">
+
+                    </Card>
                 </Col>
                 <Col className="header-image" md={10}>
                     <Card className="rounded-5  d-flex justify-content-center align-items-center position-relative" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" >
@@ -85,7 +88,7 @@ function Home() {
             </Row>
             <hr />
 
-            <Tabs defaultActiveKey="about" id="portfolio-tabs" className=" custom-tabs" variant="pills">
+            <Tabs defaultActiveKey="about" id="portfolio-tabs" className="custom-tabs" variant="pills">
                 <Tab eventKey="about"
                     title={
                         <span className="d-flex align-items-center gap-2 ">
@@ -95,21 +98,21 @@ function Home() {
                     <hr />
                     <Row className="intro-section my-5">
                         <Col >
-                            <Card className="h-100  intro rounded-5 d-flex flex-column justify-content-end" data-aos="fade-up" data-aos-duration="800" >
+                            <Card className="h-100  intro rounded-5 d-flex flex-column justify-content-end p-3" data-aos="fade-up" data-aos-duration="800" >
                                 {/* <Card.Img variant="" src="" alt="Qorry" rounded className="w-100 grayscale" /> */}
-                                <Card.ImgOverlay className="d-flex flex-column justify-content-end">
-                                    <h2 className="mt-3 about-title">Hello, My name is Derrick</h2>
-                                    <p className="about-description small">
-                                        With an ICT background, I’m a dedicated web developer who constantly
-                                        learns and explores new design approaches to deliver impactful solutions.
-                                    </p>
-                                </Card.ImgOverlay>
+                                {/* <Card.ImgOverlay className="d-flex flex-column justify-content-end"> */}
+                                <h2 className="mt-3 about-title">Hello, My name is Derrick</h2>
+                                <p className="about-description small">
+                                    With an ICT background, I’m a dedicated web developer who constantly
+                                    learns and explores new design approaches to deliver impactful solutions.
+                                </p>
+                                {/* </Card.ImgOverlay> */}
                             </Card>
                         </Col>
 
                         <Col md={8}>
-                            <Row className="intro ">
-                                <h3 className="" data-aos="fade-right" data-aos-duration="800">Introduction</h3>
+                            <Row className="intro mt-4">
+                                <h3 className="mb-4" data-aos="fade-right" data-aos-duration="800">Introduction</h3>
                                 <Card className="rounded-5 p-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                                     <h3>A Software Engineer based in Nairobi</h3>
                                     <Figure>
@@ -133,24 +136,34 @@ function Home() {
                                 </Card>
                             </Row>
                             <hr />
-                            <Row className="get-in-touch mt-4">
+                            <Row className="get-in-touch mt-4 mb-4">
                                 <h3 className="mb-4" data-aos="fade-right" data-aos-duration="800">Get In Touch</h3>
-                                <div className="d-flex gap-3">
-                                    <Card className="rounded-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                                        <a href="mailto:qorryadj@gmail.com" title="Email" className="icons" ><FaEnvelope size={40} /></a>
-                                        <hr />
-                                        <Card.Text className="icons">riobad74@gmail.com</Card.Text>
-                                    </Card>
-                                    <Card className="rounded-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                                        <a href="https://www.linkedin.com/in/derrick-r-ongwae-1530142bb/" title="LinkedIn" className="icons" ><FaLinkedin size={40} /></a>
-                                        <hr />
-                                        <Card.Text className="icons">Derrick Ongwae</Card.Text>
-                                    </Card>
-                                    <Card className="rounded-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
-                                        <a href="https://github.com/Riob-a" title="Github" className="icons" ><FaGithub size={40} /></a>
-                                        <hr />
-                                        <Card.Text className="icons">Riob-a </Card.Text>
-                                    </Card>
+                                <div className="gap-">
+                                    <Row className="social-icons">
+                                        <Col className="mt-4">
+                                            <Card className="rounded-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                                                <a href="mailto:qorryadj@gmail.com" title="Email" className="icons" ><FaEnvelope size={40} /></a>
+                                                <hr />
+                                                <Card.Text className="icons">riobad74@gmail.com</Card.Text>
+                                            </Card>
+                                        </Col>
+
+                                        <Col className="mt-4">
+                                            <Card className="rounded-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                                                <a href="https://www.linkedin.com/in/derrick-r-ongwae-1530142bb/" title="LinkedIn" className="icons" ><FaLinkedin size={40} /></a>
+                                                <hr />
+                                                <Card.Text className="icons">Derrick Ongwae</Card.Text>
+                                            </Card>
+                                        </Col>
+
+                                        <Col className="mt-4">
+                                            <Card className="rounded-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                                                <a href="https://github.com/Riob-a" title="Github" className="icons" ><FaGithub size={40} /></a>
+                                                <hr />
+                                                <Card.Text className="icons">Riob-a </Card.Text>
+                                            </Card>
+                                        </Col>
+                                    </Row>
                                 </div>
                             </Row>
                         </Col>
@@ -372,7 +385,7 @@ function Home() {
                                                 <img className="d-block w-100 rounded-4 carousel-image " src={blogers2} alt="Demo Screenshot 2" />
                                             </Carousel.Item>
                                             <Carousel.Item>
-                                                <img className="d-block w-100 rounded-4 carousel-image "  src={blogers3} alt="Demo Screenshot 2" />
+                                                <img className="d-block w-100 rounded-4 carousel-image " src={blogers3} alt="Demo Screenshot 2" />
                                             </Carousel.Item>
                                             <Carousel.Item>
                                                 <img className="d-block w-100 rounded-4 carousel-image " src={blogers4} alt="Demo Screenshot 2" />
@@ -495,59 +508,6 @@ function Home() {
                             </Card>
                         </div>
 
-                        <div className="">
-                            <Card className="rounded-4 mb-5 project-card">
-                                <Card.Body>
-                                    <Card.Title as="h2" className="text-center mb-4">Admin for Demo-App</Card.Title>
-                                    <hr />
-                                    <Card.Text className="text-center">A demo project that acts as a test-bed for any new techniques I learn.</Card.Text>
-                                    <hr />
-                                    <Row>
-                                        <Col>
-                                            <Card className=" project-card-l"  >
-                                                <Card.Text as="h5" className="text-center">Accomplishments</Card.Text>
-                                                <ul>
-                                                    <li>Facilitates User Registration and sign in</li>
-                                                    <li>Allows user to like and submit artwork</li>
-                                                    <li>Allows user to view and edit their profile</li>
-                                                </ul>
-                                            </Card>
-                                        </Col>
-                                        <Col>
-                                            <Card className=" project-card-r" >
-                                                <Card.Text as="h5" className="text-center">Tools</Card.Text>
-                                                <ul>
-                                                    <li><FaReact /> React</li>
-                                                    <li><FaPython /> Flask Debug</li>
-                                                    <li>Axios</li>
-                                                    <li>Cloudinary</li>
-                                                </ul>
-                                            </Card>
-                                        </Col>
-                                    </Row>
-                                    <hr />
-                                    <Row>
-                                        <Card.Text as="h5" className="text-center">
-                                            <FaGithub /> Github Links<br />
-                                            <Card.Link href="https://github.com/Riob-a/Demo-Project-F-end">Frontend</Card.Link>
-                                            <Card.Link href="https://github.com/Riob-a/Demo-Project-Backend">Backend</Card.Link>
-                                        </Card.Text>
-                                    </Row>
-                                    <Card className="rounded-4 project-card">
-                                        <Carousel>
-                                            <Carousel.Item>
-                                                <img className="d-block w-100 rounded-4 carousel-image" src={image1} alt="Demo Screenshot 1" />
-                                            </Carousel.Item>
-                                            <Carousel.Item>
-                                                <img className="d-block w-100 rounded-4 carousel-image" src="" alt="Demo Screenshot 2" />
-                                            </Carousel.Item>
-                                        </Carousel>
-                                    </Card>
-                                    <hr />
-                                    <Button variant="" href="https://demo-project-f-end.vercel.app/" className="button visit">Visit</Button>
-                                </Card.Body>
-                            </Card>
-                        </div>
                     </Slider>
                 </Tab>
             </Tabs>
