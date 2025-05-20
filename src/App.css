@@ -1,48 +1,12 @@
-/* Gradient wave animation keyframes */
-@keyframes gradientWave {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  25% {
-    background-position: 50% 25%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  75% {
-    background-position: 50% 75%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-/* html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: "Unbounded", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-weight: bold;
-  color:#fbfbc4;
-  background-color: #1a1a1b;
-} */
-
-.app-container {
+/* .code-body{
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ensures full viewport height */
-}
+  justify-content: center;
+  align-items: center;
+  margin:0;
+  
+} */
 
-.content {
-  flex-grow: 1; /* Pushes the footer down */
-}
 
  body{
   font-family: "Unbounded", sans-serif;
@@ -50,37 +14,10 @@
   font-weight: 700;
   font-style: normal;
   font-weight: bold;
-  /* color:#706d42; */
-  /* color:#b4ef7c; */
   color: #c4382c;
   background-color: #1a1a1b;
 
  }
-
-
-/* transpareent frosted card */
-/* .card{
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  border-radius: 12px;
-  padding: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.3); 
-  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
-  color: white;
-  button{
-    background: rgba(255, 255, 255, 0.15);
-    color: rgb(255, 255, 255);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 12px;
-    padding: 10px;
-    margin-top: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    &:hover{
-      background: rgba(249, 208, 74, 0.3);
-    }
-  }
-} */
 .card{
   /* background: #71997F; */
   background:#4d6957;
@@ -90,12 +27,7 @@
   .card-title{
     color: #a33127;
   }
-  /* .card-text {
-    text-shadow:#8a9566 1px 1px 1px;
-  } */
-  /* .card-p{
-    text-shadow:#8a9566 1px 1px 1px;
-  } */
+
 }
 .visit{
     background: #4d6957;

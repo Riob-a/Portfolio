@@ -1,20 +1,25 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import { Container, Row, Col, Card, Image, Tabs, Tab, Figure, ListGroup, Button, Carousel } from "react-bootstrap";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import image1 from '../components/images/Derricks Demo.png';
-import image2 from "../components/images/fund Girls.png"
+import image1 from '../components/images/Derricks Demo 1.jpg';
+import image3 from "../components/images/Derricks Demo 3.jpg"
 import readfinder1 from "../components/images/readfinder1.jpg"
 import readfinder2 from "../components/images/readfinder2.jpg"
 import blogers from '../components/images/blogers.jpg';
 import blogers2 from '../components/images/blogers2.jpg';
-import { FaEnvelope, FaLinkedin, FaGithub, FaUser, FaFileAlt, FaPen, FaReact, FaPython, FaJsSquare } from 'react-icons/fa';
-import './reference.css';
+import blogers3 from "../components/images/blogers3.jpg";
+import blogers4 from "../components/images/blogers4.jpg";
 
-function Reference() {
+import { FaEnvelope, FaLinkedin, FaGithub, FaUser, FaFileAlt, FaPen, FaReact, FaPython, FaJsSquare } from "react-icons/fa";
+import { ThemeContext } from "../components/ThemeContenxt";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./Home.css"
+// import './reference.css';
+
+function Home() {
     const svg = (
         <svg
             // width="250" height="250" 
@@ -41,7 +46,7 @@ function Reference() {
             {
                 breakpoint: 1024, // Tablets and larger
                 settings: {
-                    slidesToShow: 1.5, // Show 1.5 cards (partially visible)
+                    slidesToShow: 1, // Show 1.5 cards (partially visible)
                 },
             },
             {
@@ -54,7 +59,7 @@ function Reference() {
     };
 
     return (
-        <Container className="container-fluid mb-5">
+        <div className="code-body mb-5">
             <hr />
             <Row className="page-top ">
                 <div className="header">
@@ -65,20 +70,36 @@ function Reference() {
 
             <hr />
 
-            <Row className="header-section mb-5 mt-5">
-                <Col className="header-text" data-aos="fade-up" data-aos-duration="800" data-aos-delay="" >
-                    {svg} {svg} {svg} {svg} {svg} {svg}
+            <Row className="header-section mb-5 mt-5 flex-nowrap">
+                <Col
+                    xs='auto'
+                    className="header-text"
+                    data-aos="fade-up" data-aos-duration="800" data-aos-delay=""
+                >
+
+                    <Card className="intro-sidebar">
+                        {/* {svg} {svg} {svg} {svg} {svg} {svg} */}
+                        {/* <Card.Text as="h1" className="sidebar-text" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400" > PORTFOLIO</Card.Text> */}
+
+                    </Card>
                 </Col>
-                <Col className="header-image" md={10}>
+                <Col className="header-image" 
+                md={10} xs={10} 
+                >
                     <Card className="rounded-5  d-flex justify-content-center align-items-center position-relative" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" >
                         <Card.Text as="h1" className="portfolio-title" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400" > PORTFOLIO</Card.Text>
                         <div className="portfolio-footer small" data-aos="fade-in" data-aos-delay="600">2025</div>
                     </Card>
                 </Col>
+                <Col xs='auto'
+                    className="header-text"
+                    data-aos="fade-up" data-aos-duration="800" data-aos-delay="">
+                        <Card className="intro-sidebar2"></Card>
+                </Col>
             </Row>
             <hr />
 
-            <Tabs defaultActiveKey="about" id="portfolio-tabs" className=" custom-tabs" variant="pills">
+            <Tabs defaultActiveKey="about" id="portfolio-tabs" className="custom-tabs" variant="pills">
                 <Tab eventKey="about"
                     title={
                         <span className="d-flex align-items-center gap-2 ">
@@ -88,21 +109,21 @@ function Reference() {
                     <hr />
                     <Row className="intro-section my-5">
                         <Col >
-                            <Card className="h-100  intro rounded-5 d-flex flex-column justify-content-end" data-aos="fade-up" data-aos-duration="800" >
+                            <Card className="h-100  intro rounded-5 d-flex flex-column justify-content-end p-3" data-aos="fade-up" data-aos-duration="800" >
                                 {/* <Card.Img variant="" src="" alt="Qorry" rounded className="w-100 grayscale" /> */}
-                                <Card.ImgOverlay className="d-flex flex-column justify-content-end">
-                                    <h2 className="mt-3 about-title">Hello, My name is Derrick</h2>
-                                    <p className="about-description small">
-                                        With an ICT background, I’m a dedicated web developer who constantly
-                                        learns and explores new design approaches to deliver impactful solutions.
-                                    </p>
-                                </Card.ImgOverlay>
+                                {/* <Card.ImgOverlay className="d-flex flex-column justify-content-end"> */}
+                                <h2 className="mt-3 about-title">Hello, My name is Derrick</h2>
+                                <p className="about-description small">
+                                    With an ICT background, I’m a dedicated web developer who constantly
+                                    learns and explores new design approaches to deliver impactful solutions.
+                                </p>
+                                {/* </Card.ImgOverlay> */}
                             </Card>
                         </Col>
 
                         <Col md={8}>
-                            <Row className="intro ">
-                                <h3 className="" data-aos="fade-right" data-aos-duration="800">Introduction</h3>
+                            <Row className="intro mt-4">
+                                <h3 className="mb-4" data-aos="fade-right" data-aos-duration="800">Introduction</h3>
                                 <Card className="rounded-5 p-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                                     <h3>A Software Engineer based in Nairobi</h3>
                                     <Figure>
@@ -126,24 +147,34 @@ function Reference() {
                                 </Card>
                             </Row>
                             <hr />
-                            <Row className="get-in-touch mt-4">
+                            <Row className="get-in-touch mt-4 mb-4">
                                 <h3 className="mb-4" data-aos="fade-right" data-aos-duration="800">Get In Touch</h3>
-                                <div className="d-flex gap-3">
-                                    <Card className="rounded-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                                        <a href="mailto:qorryadj@gmail.com" title="Email" className="icons" ><FaEnvelope size={40} /></a>
-                                        <hr />
-                                        <Card.Text className="icons">riobad74@gmail.com</Card.Text>
-                                    </Card>
-                                    <Card className="rounded-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                                        <a href="https://www.linkedin.com/in/derrick-r-ongwae-1530142bb/" title="LinkedIn" className="icons" ><FaLinkedin size={40} /></a>
-                                        <hr />
-                                        <Card.Text className="icons">Derrick Ongwae</Card.Text>
-                                    </Card>
-                                    <Card className="rounded-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
-                                        <a href="https://github.com/Riob-a" title="Github" className="icons" ><FaGithub size={40} /></a>
-                                        <hr />
-                                        <Card.Text className="icons">Riob-a </Card.Text>
-                                    </Card>
+                                <div className="gap-">
+                                    <Row className="social-icons">
+                                        <Col className="mt-4">
+                                            <Card className="rounded-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                                                <a href="mailto:qorryadj@gmail.com" title="Email" className="icons" ><FaEnvelope size={40} /></a>
+                                                <hr />
+                                                <Card.Text className="icons">riobad74@gmail.com</Card.Text>
+                                            </Card>
+                                        </Col>
+
+                                        <Col className="mt-4">
+                                            <Card className="rounded-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                                                <a href="https://www.linkedin.com/in/derrick-r-ongwae-1530142bb/" title="LinkedIn" className="icons" ><FaLinkedin size={40} /></a>
+                                                <hr />
+                                                <Card.Text className="icons">Derrick Ongwae</Card.Text>
+                                            </Card>
+                                        </Col>
+
+                                        <Col className="mt-4">
+                                            <Card className="rounded-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                                                <a href="https://github.com/Riob-a" title="Github" className="icons" ><FaGithub size={40} /></a>
+                                                <hr />
+                                                <Card.Text className="icons">Riob-a </Card.Text>
+                                            </Card>
+                                        </Col>
+                                    </Row>
                                 </div>
                             </Row>
                         </Col>
@@ -300,10 +331,10 @@ function Reference() {
                                     <Card className="rounded-4 project-card">
                                         <Carousel>
                                             <Carousel.Item>
-                                                <img className="d-block w-100 h-75 rounded-4" src={image1} alt="Demo Screenshot 1" />
+                                                <img className="d-block w-100 rounded-4 carousel-image" src={image1} alt="Demo Screenshot 1" />
                                             </Carousel.Item>
                                             <Carousel.Item>
-                                                <img className="d-block w-100" src="" alt="Demo Screenshot 2" />
+                                                <img className="d-block w-100 rounded-4 carousel-image" src={image3} alt="Demo Screenshot 2" />
                                             </Carousel.Item>
                                         </Carousel>
                                     </Card>
@@ -359,10 +390,16 @@ function Reference() {
                                     <Card className="rounded-4 project-card">
                                         <Carousel>
                                             <Carousel.Item>
-                                                <img className="d-block w-100 h-75 rounded-4" src={blogers} alt="Demo Screenshot 1" />
+                                                <img className="d-block w-100 rounded-4 carousel-image " src={blogers} alt="Demo Screenshot 1" />
                                             </Carousel.Item>
                                             <Carousel.Item>
-                                                <img className="d-block w-100" src={blogers2} alt="Demo Screenshot 2" />
+                                                <img className="d-block w-100 rounded-4 carousel-image " src={blogers2} alt="Demo Screenshot 2" />
+                                            </Carousel.Item>
+                                            <Carousel.Item>
+                                                <img className="d-block w-100 rounded-4 carousel-image " src={blogers3} alt="Demo Screenshot 2" />
+                                            </Carousel.Item>
+                                            <Carousel.Item>
+                                                <img className="d-block w-100 rounded-4 carousel-image " src={blogers4} alt="Demo Screenshot 2" />
                                             </Carousel.Item>
                                         </Carousel>
                                     </Card>
@@ -416,10 +453,10 @@ function Reference() {
                                     <Card className="rounded-4 project-card">
                                         <Carousel>
                                             <Carousel.Item>
-                                                <img className="d-block w-100 h-75 rounded-4" src={readfinder1} alt="Demo Screenshot 1" />
+                                                <img className="d-block w-100  rounded-4 carousel-image" src={readfinder1} alt="Demo Screenshot 1" />
                                             </Carousel.Item>
                                             <Carousel.Item>
-                                                <img className="d-block w-100" src={readfinder2} alt="Demo Screenshot 2" />
+                                                <img className="d-block w-100 rounded-4 carousel-image" src={readfinder2} alt="Demo Screenshot 2" />
                                             </Carousel.Item>
                                         </Carousel>
                                     </Card>
@@ -469,10 +506,10 @@ function Reference() {
                                     <Card className="rounded-4 project-card">
                                         <Carousel>
                                             <Carousel.Item>
-                                                <img className="d-block w-100 h-75 rounded-4" src={image1} alt="Demo Screenshot 1" />
+                                                <img className=" d-block w-100 rounded-4 carousel-image" src={image1} alt="Demo Screenshot 1" />
                                             </Carousel.Item>
                                             <Carousel.Item>
-                                                <img className="d-block w-100" src="" alt="Demo Screenshot 2" />
+                                                <img className=" d-block w-100 rounded-4 carousel-image" src="" alt="Demo Screenshot 2" />
                                             </Carousel.Item>
                                         </Carousel>
                                     </Card>
@@ -482,65 +519,11 @@ function Reference() {
                             </Card>
                         </div>
 
-                        <div className="">
-                            <Card className="rounded-4 mb-5 project-card">
-                                <Card.Body>
-                                    <Card.Title as="h2" className="text-center mb-4">Admin for Demo-App</Card.Title>
-                                    <hr />
-                                    <Card.Text className="text-center">A demo project that acts as a test-bed for any new techniques I learn.</Card.Text>
-                                    <hr />
-                                    <Row>
-                                        <Col>
-                                            <Card className=" project-card-l"  >
-                                                <Card.Text as="h5" className="text-center">Accomplishments</Card.Text>
-                                                <ul>
-                                                    <li>Facilitates User Registration and sign in</li>
-                                                    <li>Allows user to like and submit artwork</li>
-                                                    <li>Allows user to view and edit their profile</li>
-                                                </ul>
-                                            </Card>
-                                        </Col>
-                                        <Col>
-                                            <Card className=" project-card-r" >
-                                                <Card.Text as="h5" className="text-center">Tools</Card.Text>
-                                                <ul>
-                                                    <li><FaReact /> React</li>
-                                                    <li><FaPython /> Flask Debug</li>
-                                                    <li>Axios</li>
-                                                    <li>Cloudinary</li>
-                                                </ul>
-                                            </Card>
-                                        </Col>
-                                    </Row>
-                                    <hr />
-                                    <Row>
-                                        <Card.Text as="h5" className="text-center">
-                                            <FaGithub /> Github Links<br />
-                                            <Card.Link href="https://github.com/Riob-a/Demo-Project-F-end">Frontend</Card.Link>
-                                            <Card.Link href="https://github.com/Riob-a/Demo-Project-Backend">Backend</Card.Link>
-                                        </Card.Text>
-                                    </Row>
-                                    <Card className="rounded-4 project-card">
-                                        <Carousel>
-                                            <Carousel.Item>
-                                                <img className="d-block w-100 h-75 rounded-4" src={image1} alt="Demo Screenshot 1" />
-                                            </Carousel.Item>
-                                            <Carousel.Item>
-                                                <img className="d-block w-100" src="" alt="Demo Screenshot 2" />
-                                            </Carousel.Item>
-                                        </Carousel>
-                                    </Card>
-                                    <hr />
-                                    <Button variant="" href="https://demo-project-f-end.vercel.app/" className="button visit">Visit</Button>
-                                </Card.Body>
-                            </Card>
-                        </div>
                     </Slider>
                 </Tab>
             </Tabs>
             <br />
-        </Container>
+        </div>
     );
 }
-
-export default Reference;
+export default Home;
