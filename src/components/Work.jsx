@@ -11,6 +11,7 @@ import blogers4 from "../components/images/blogers4.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+// import "../pages/Home.css"
 
 function Work() {
 
@@ -40,9 +41,9 @@ function Work() {
 
     return (
         <Container>
-            <Slider {...settings}>
+            <Carousel interval={null} indicators={false} className="project-carousel">
                 {/* Project 1 */}
-                <div className="">
+                <Carousel.Item>
                     <Card className="rounded-4 mb-5 project-card">
                         <Card.Body>
                             <Card.Title as="h2" className="text-center mb-4">Demo-App</Card.Title>
@@ -51,8 +52,9 @@ function Work() {
                             <hr />
                             <Row>
                                 <Col>
-                                    <Card className=" project-card-l"  >
+                                    <Card className=" project-card-l mt-2"  >
                                         <Card.Text as="h5" className="text-center">Accomplishments</Card.Text>
+                                        <hr />
                                         <ul>
                                             <li>Facilitates User Registration and sign in</li>
                                             <li>Allows user to like and submit artwork</li>
@@ -61,8 +63,9 @@ function Work() {
                                     </Card>
                                 </Col>
                                 <Col>
-                                    <Card className=" project-card-r" >
+                                    <Card className=" project-card-r mt-2" >
                                         <Card.Text as="h5" className="text-center">Tools</Card.Text>
+                                        <hr />
                                         <ul>
                                             <li><FaReact /> React</li>
                                             <li><FaPython /> Flask Debug</li>
@@ -72,15 +75,8 @@ function Work() {
                                     </Card>
                                 </Col>
                             </Row>
-                            <hr />
-                            <Row>
-                                <Card.Text as="h5" className="text-center">
-                                    <FaGithub /> Github Links<br />
-                                    <Card.Link href="https://github.com/Riob-a/Demo-Project-F-end">Frontend</Card.Link>
-                                    <Card.Link href="https://github.com/Riob-a/Demo-Project-Backend">Backend</Card.Link>
-                                </Card.Text>
-                            </Row>
-                            <Card className="rounded-4 project-card">
+                            
+                            <Card className="rounded-4 project-card mt-4">
                                 <Carousel>
                                     <Carousel.Item>
                                         <img className="d-block w-100 rounded-4 carousel-image" src={image1} alt="Demo Screenshot 1" />
@@ -90,14 +86,23 @@ function Work() {
                                     </Carousel.Item>
                                 </Carousel>
                             </Card>
-                            <hr />
+                            <br />
+                            <Row>
+                                <Card.Text as="h5" className="text-center">
+                                    <FaGithub /> Github Links : 
+                                    <Card.Link href="https://github.com/Riob-a/Demo-Project-F-end">  Frontend</Card.Link>
+                                    <Card.Link href="https://github.com/Riob-a/Demo-Project-Backend">Backend</Card.Link>
+                                    <hr />
+                                </Card.Text>
+                            </Row>
+                            
                             <Button variant="" href="https://demo-project-f-end.vercel.app/" className="button visit">Visit</Button>
                         </Card.Body>
                     </Card>
-                </div>
+                </Carousel.Item>
 
                 {/* Project 2 */}
-                <div className="">
+                <Carousel.Item>
                     <Card className="rounded-4 mb-5 project-card">
                         <Card.Body>
                             <Card.Title as="h2" className="text-center mb-4">Blogers</Card.Title>
@@ -110,8 +115,9 @@ function Work() {
                             <hr />
                             <Row>
                                 <Col>
-                                    <Card className=" project-card-l"  >
+                                    <Card className=" project-card-l mt-2"  >
                                         <Card.Text as="h5" className="text-center">Accomplishments</Card.Text>
+                                        <hr />
                                         <ul>
                                             <li>Facilitates User Registration and sign in</li>
                                             <li>Allows user to like and submit blogs</li>
@@ -120,8 +126,9 @@ function Work() {
                                     </Card>
                                 </Col>
                                 <Col>
-                                    <Card className=" project-card-r" >
+                                    <Card className=" project-card-r mt-2" >
                                         <Card.Text as="h5" className="text-center">Tools</Card.Text>
+                                        <hr />
                                         <ul>
                                             <li><FaReact /> React</li>
                                             <li><FaPython /> Flask Debug</li>
@@ -132,14 +139,8 @@ function Work() {
                                 </Col>
                             </Row>
                             <hr />
-                            <Row>
-                                <Card.Text as="h5" className="text-center">
-                                    <FaGithub /> Github Links<br />
-                                    <Card.Link href="https://github.com/Riob-a/Demo-Project-F-end">Frontend</Card.Link>
-                                    <Card.Link href="https://github.com/Riob-a/Demo-Project-Backend">Backend</Card.Link>
-                                </Card.Text>
-                            </Row>
-                            <Card className="rounded-4 project-card">
+                           
+                            <Card className="rounded-4 project-card mt-4">
                                 <Carousel>
                                     <Carousel.Item>
                                         <img className="d-block w-100 rounded-4 carousel-image " src={blogers} alt="Demo Screenshot 1" />
@@ -155,13 +156,23 @@ function Work() {
                                     </Carousel.Item>
                                 </Carousel>
                             </Card>
-                            <hr />
+                            <br />
+                             <Row>
+                                <Card.Text as="h5" className="text-center">
+                                    <FaGithub /> Github Links : 
+                                    <Card.Link href="https://github.com/Riob-a/Demo-Project-F-end"> Frontend</Card.Link>
+                                    <Card.Link href="https://github.com/Riob-a/Demo-Project-Backend">Backend</Card.Link>
+                                    <hr />
+                                </Card.Text>
+                            </Row>
+                            
                             <Button variant="" href="https://blogers-front-end-srpb.vercel.app/" className="button visit">Visit</Button>
                         </Card.Body>
                     </Card>
-                </div>
+                </Carousel.Item>
 
-                <div className="">
+                {/* Project 3 */}
+                <Carousel.Item>
                     <Card className="rounded-4 mb-5 project-card">
                         <Card.Body>
                             <Card.Title as="h2" className="text-center mb-4">Read Finder</Card.Title>
@@ -173,8 +184,9 @@ function Work() {
                             <hr />
                             <Row>
                                 <Col>
-                                    <Card className=" project-card-l"  >
+                                    <Card className=" project-card-l mt-2"  >
                                         <Card.Text as="h5" className="text-center">Accomplishments</Card.Text>
+                                        <hr />
                                         <ul>
                                             <li>Facilitates User Registration and sign in</li>
                                             <li>Allows user to like and submit artwork</li>
@@ -183,8 +195,9 @@ function Work() {
                                     </Card>
                                 </Col>
                                 <Col>
-                                    <Card className=" project-card-r" >
+                                    <Card className=" project-card-r mt-2" >
                                         <Card.Text as="h5" className="text-center">Tools</Card.Text>
+                                        <hr />
                                         <ul>
                                             <li><FaReact /> React</li>
                                             <li><FaPython /> Flask Debug</li>
@@ -194,15 +207,8 @@ function Work() {
                                     </Card>
                                 </Col>
                             </Row>
-                            <hr />
-                            <Row>
-                                <Card.Text as="h5" className="text-center">
-                                    <FaGithub /> Github Links<br />
-                                    <Card.Link href="https://github.com/Riob-a/ReadFinder">Frontend</Card.Link>
-                                    <Card.Link href="https://github.com/Riob-a/ReadFinder">Backend</Card.Link>
-                                </Card.Text>
-                            </Row>
-                            <Card className="rounded-4 project-card">
+                            
+                            <Card className="rounded-4 project-card mt-4">
                                 <Carousel>
                                     <Carousel.Item>
                                         <img className="d-block w-100  rounded-4 carousel-image" src={readfinder1} alt="Demo Screenshot 1" />
@@ -212,12 +218,22 @@ function Work() {
                                     </Carousel.Item>
                                 </Carousel>
                             </Card>
-                            <hr />
+                            <br />
+                            <Row>
+                                <Card.Text as="h5" className="text-center">
+                                    <FaGithub /> Github Links : 
+                                    <Card.Link href="https://github.com/Riob-a/ReadFinder"> Frontend</Card.Link>
+                                    <Card.Link href="https://github.com/Riob-a/ReadFinder">Backend</Card.Link>
+                                    <hr />
+                                </Card.Text>
+                            </Row>
                             <Button variant="" href="https://read-finder.vercel.app/" className="button visit">Visit</Button>
                         </Card.Body>
                     </Card>
-                </div>
-                <div className="">
+                </Carousel.Item>
+
+                {/* Project 4 */}
+                <Carousel.Item>
                     <Card className="rounded-4 mb-5 project-card">
                         <Card.Body>
                             <Card.Title as="h2" className="text-center mb-4">Admin for Demo-App</Card.Title>
@@ -226,8 +242,9 @@ function Work() {
                             <hr />
                             <Row>
                                 <Col>
-                                    <Card className=" project-card-l"  >
+                                    <Card className=" project-card-l mt-2"  >
                                         <Card.Text as="h5" className="text-center">Accomplishments</Card.Text>
+                                        <hr />
                                         <ul>
                                             <li>Facilitates User Registration and sign in</li>
                                             <li>Allows Admin to delete likes and  artwork</li>
@@ -236,8 +253,9 @@ function Work() {
                                     </Card>
                                 </Col>
                                 <Col>
-                                    <Card className=" project-card-r" >
+                                    <Card className=" project-card-r mt-2" >
                                         <Card.Text as="h5" className="text-center">Tools</Card.Text>
+                                        <hr />
                                         <ul>
                                             <li><FaReact /> React</li>
                                             <li><FaPython /> Flask Debug</li>
@@ -247,15 +265,8 @@ function Work() {
                                     </Card>
                                 </Col>
                             </Row>
-                            <hr />
-                            <Row>
-                                <Card.Text as="h5" className="text-center">
-                                    <FaGithub /> Github Links<br />
-                                    <Card.Link href="https://github.com/Riob-a/Demo-Project-F-end">Frontend</Card.Link>
-                                    <Card.Link href="https://github.com/Riob-a/Demo-Project-Backend">Backend</Card.Link>
-                                </Card.Text>
-                            </Row>
-                            <Card className="rounded-4 project-card">
+                            
+                            <Card className="rounded-4 project-card mt-4">
                                 <Carousel>
                                     <Carousel.Item>
                                         <img className=" d-block w-100 rounded-4 carousel-image" src={image1} alt="Demo Screenshot 1" />
@@ -265,13 +276,21 @@ function Work() {
                                     </Carousel.Item>
                                 </Carousel>
                             </Card>
-                            <hr />
+                            <br />
+                            <Row>
+                                <Card.Text as="h5" className="text-center">
+                                    <FaGithub /> Github Links : 
+                                    <Card.Link href="https://github.com/Riob-a/Demo-Project-F-end"> Frontend</Card.Link>
+                                    <Card.Link href="https://github.com/Riob-a/Demo-Project-Backend">Backend</Card.Link> 
+                                    <hr />
+                                </Card.Text>
+                            </Row>
                             <Button variant="" href="https://demo-project-admin-wheat.vercel.app/" className="button visit">Visit</Button>
                         </Card.Body>
                     </Card>
-                </div>
+                </Carousel.Item>
 
-            </Slider>
+            </Carousel>
         </Container>
     )
 }

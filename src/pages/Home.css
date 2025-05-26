@@ -109,11 +109,12 @@ p {
   font-size: 0.9rem;
 }
 
-.header-section{
-  margin:auto;
+.header-section {
+  margin: auto;
   display: flex;
   justify-content: center;
 }
+
 .header-section .card {
   /* background: linear-gradient(45deg, #fde2c0, #F7C0C4, #f6b6c5, #ed8aca, #B162F5); */
   background: linear-gradient(60deg, #71997f, #71997f, #d0e0a2, #BACA8B, #71997f, #71997f);
@@ -170,7 +171,7 @@ p {
   right: 1.5rem;
   /* margin-top: 2rem; */
   font-size: 1.0rem;
-  color: #5d5d5d;
+  color: #a23026;
   /* match existing card text color */
   font-family: 'Archivo Black', sans-serif;
   font-weight: 300px;
@@ -215,6 +216,7 @@ p {
   min-width: 90px;
   max-width: 150px;
 }
+
 .intro-sidebar2 {
   /* border: 2px solid #706d42; */
   border-top-left-radius: 10px;
@@ -230,6 +232,7 @@ p {
     overflow-x: auto;
   }
 }
+
 /* .sidebar-text{
     rotate: -90deg;
     justify-content: center;
@@ -243,6 +246,17 @@ p {
       #c1392d 10px 15px 1px, #a23026 20px 25px 0px, #82271e 30px 35px 0px, #4c1713 40px 45px 0px !important;
 
 } */
+.gen-card {
+  background: #4d6957;
+  backdrop-filter: blur(10px);
+  border: none;
+  color: #BACA8B;
+
+  .card-title {
+    color: #a33127;
+  }
+
+}
 
 .get-in-touch .card {
   width: 100%;
@@ -252,7 +266,7 @@ p {
   background: linear-gradient(45deg, #71997f, #71997f, #d0e0a2, #BACA8B, #71997f, #71997f, #d0e0a2, #BACA8B, #71997f, #71997f);
   background-size: 200% 100%;
   animation: gradientWave 10s ease infinite;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s ;
 }
 
 .icons {
@@ -275,25 +289,35 @@ p {
 
 .custom-tabs .nav-link :hover {
   /* background: #d0e0a2; */
-  color: #d0e0a2;
+  /* color: #d0e0a2; */
+  background: linear-gradient(45deg, #71997f, #71997f, #d0e0a2, #BACA8B, #71997f, #71997f, #d0e0a2, #BACA8B, #71997f, #71997f);
+  background-size: 200% 100%;
+  animation: gradientWave 10s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+  transition: background-color 0.3s, color 0.3s;
   transform: scale(1.1);
-  transition: transform 0.3s ease-in-out, background-color 0.3s, color 0.3s;
+  transition: all 0.3s ease;
 }
 
 .custom-tabs .nav-link {
-  border: none;
-  background: none;
   color: #71997f;
+  transition: background 0.5s ease, color 0.5s ease;
+  display: inline-block;
+  position: relative;
   font-weight: 500;
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
   gap: 8px;
   font-size: 1rem;
+  transition: all 0.3s ease;
 
 }
 
-.custom-tabs .nav-link .tab-icon {
+.custom-tabs  .tab-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -371,6 +395,11 @@ p {
   background: transparent !important;
   margin: 12px;
 
+  .card-title {
+    color: #71997f;
+
+  }
+
   .card-text {
     color: #a33127;
   }
@@ -378,32 +407,44 @@ p {
 
 .project-card-l {
   padding: 15px;
-  border: 2px solid #706d42;
-  background: transparent !important;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-.project-card-r {
-  padding: 15px;
+  height: fit-content;
   border: 2px solid #706d42;
   background: transparent !important;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
+  color: #c4382c;
+
+  .card-text {
+    color: #71997f;
+  }
+}
+
+.project-card-r {
+  padding: 15px;
+  height: fit-content;
+  border: 2px solid #706d42;
+  background: transparent !important;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #c4382c;
+
+  .card-text {
+    color: #71997f;
+  }
+
 }
 
 .carousel-image {
   height: 500px;
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
 }
 
 .badge-color {
   background-color: #71997f;
-  /* color:#baca8b; */
   color: #3a4340;
 }

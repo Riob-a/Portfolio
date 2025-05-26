@@ -8,7 +8,7 @@ function About() {
         <Container>
             <Row className="intro-section my-5">
                 <Col >
-                    <Card className="h-100  intro rounded-5 d-flex flex-column justify-content-end p-3" data-aos="fade-up" data-aos-duration="800" >
+                    <Card className="h-100  intro rounded-5 d-flex flex-column justify-content-end p-3 gen-card" data-aos="fade-up" data-aos-duration="800" >
                         {/* <Card.Img variant="" src="" alt="Qorry" rounded className="w-100 grayscale" /> */}
                         {/* <Card.ImgOverlay className="d-flex flex-column justify-content-end"> */}
                         <h2 className="mt-3 about-title">Hello, My name is Derrick</h2>
@@ -23,7 +23,7 @@ function About() {
                 <Col md={8}>
                     <Row className="intro mt-4">
                         <h3 className="mb-4" data-aos="fade-right" data-aos-duration="800">Introduction</h3>
-                        <Card className="rounded-5 p-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <Card className="rounded-5 p-4 gen-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                             <h3>A Software Engineer based in Nairobi</h3>
                             <Figure>
                                 <Figure.Caption>
@@ -51,7 +51,7 @@ function About() {
                         <div className="gap-">
                             <Row className="social-icons">
                                 <Col className="mt-4">
-                                    <Card className="rounded-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                                    <Card className="rounded-5 " data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                                         <a href="mailto:qorryadj@gmail.com" title="Email" className="icons" ><FaEnvelope size={40} /></a>
                                         <hr />
                                         <Card.Text className="icons">riobad74@gmail.com</Card.Text>

@@ -6,21 +6,21 @@ function Resume() {
             <Row className="qualifications my-5">
                 <Col className="expirience p-4" data-aos="fade-up" data-aos-duration="800" md={4}>
                     <h4 className="mb-4">Experience</h4>
-                    <Card className="rounded-5">
+                    <Card className="rounded-5 gen-card">
                         <Card.Title>2024 - Present</Card.Title>
                         <strong className="card-p">Freelance</strong>
                         <p className="card-p"> Web Developer (Front and Backend)</p>
                     </Card>
                     <hr />
 
-                    <Card className="rounded-5">
+                    <Card className="rounded-5 gen-card">
                         <Card.Title>2022</Card.Title>
                         <strong className="card-p"> Kenyatta National Hospital</strong>
                         <p className="card-p">Industrial attache</p>
                     </Card>
                     <hr />
 
-                    <Card className="rounded-5">
+                    <Card className="rounded-5 gen-card">
                         <Card.Title>2021</Card.Title>
                         <strong className="card-p">Kenya Technical Trainers Institute</strong>
                         <p className="card-p">Industrial attache</p>
@@ -63,7 +63,7 @@ function Resume() {
 
                 <Col className="education p-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" md={4}>
                     <h4 className="mb-4">Education</h4>
-                    <Card className="rounded-5">
+                    <Card className="rounded-5  gen-card">
                         <Card.Title>2024</Card.Title>
                         <Card.Text>Moringa</Card.Text>
                         <Card.Text>
@@ -72,7 +72,7 @@ function Resume() {
                         </Card.Text>
                     </Card>
                     <hr />
-                    <Card className="rounded-5">
+                    <Card className="rounded-5 gen-card">
                         <Card.Title>2020 - 2023</Card.Title>
                         <Card.Text>Nairobi National Polytechnic</Card.Text>
                         <Card.Text>
