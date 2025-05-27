@@ -6,6 +6,7 @@ function Resume() {
             <Row className="qualifications my-5">
                 <Col className="expirience p-4" data-aos="fade-up" data-aos-duration="800" md={4}>
                     <h4 className="mb-4">Experience</h4>
+                    <hr />
                     <Card className="rounded-5 gen-card">
                         <Card.Title>2024 - Present</Card.Title>
                         <strong className="card-p">Freelance</strong>
@@ -29,7 +30,7 @@ function Resume() {
 
                 <Col className="expertise p-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" md={4}>
                     <h4 className="mb-4">Expertise</h4>
-                    <p>Logo, Brand Identity, Packaging, Poster & Editorial, Social Media Post, 3D & Motion Graphic</p>
+                    {/* <p>Logo, Brand Identity, Packaging, Poster & Editorial, Social Media Post, 3D & Motion Graphic</p> */}
                     <hr />
 
                     <h5>Front-end</h5>
@@ -63,6 +64,7 @@ function Resume() {
 
                 <Col className="education p-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" md={4}>
                     <h4 className="mb-4">Education</h4>
+                    <hr />
                     <Card className="rounded-5  gen-card">
                         <Card.Title>2024</Card.Title>
                         <Card.Text>Moringa</Card.Text>

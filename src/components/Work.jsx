@@ -41,7 +41,7 @@ function Work() {
 
     return (
         <Container>
-            <Carousel interval={null} indicators={false} className="project-carousel">
+            <Carousel interval={10000} indicators={false} className="outer-carousel">
                 {/* Project 1 */}
                 <Carousel.Item>
                     <Card className="rounded-4 mb-5 project-card">
@@ -77,7 +77,7 @@ function Work() {
                             </Row>
                             
                             <Card className="rounded-4 project-card mt-4">
-                                <Carousel>
+                                <Carousel className="inner-carousel">
                                     <Carousel.Item>
                                         <img className="d-block w-100 rounded-4 carousel-image" src={image1} alt="Demo Screenshot 1" />
                                     </Carousel.Item>
@@ -141,7 +141,7 @@ function Work() {
                             <hr />
                            
                             <Card className="rounded-4 project-card mt-4">
-                                <Carousel>
+                                <Carousel className="inner-carousel">
                                     <Carousel.Item>
                                         <img className="d-block w-100 rounded-4 carousel-image " src={blogers} alt="Demo Screenshot 1" />
                                     </Carousel.Item>
@@ -209,7 +209,7 @@ function Work() {
                             </Row>
                             
                             <Card className="rounded-4 project-card mt-4">
-                                <Carousel>
+                                <Carousel className="inner-carousel">
                                     <Carousel.Item>
                                         <img className="d-block w-100  rounded-4 carousel-image" src={readfinder1} alt="Demo Screenshot 1" />
                                     </Carousel.Item>
@@ -267,7 +267,7 @@ function Work() {
                             </Row>
                             
                             <Card className="rounded-4 project-card mt-4">
-                                <Carousel>
+                                <Carousel className="inner-carousel">
                                     <Carousel.Item>
                                         <img className=" d-block w-100 rounded-4 carousel-image" src={image1} alt="Demo Screenshot 1" />
                                     </Carousel.Item>
