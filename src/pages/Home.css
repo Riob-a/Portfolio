@@ -453,11 +453,21 @@ p {
 
 .outer-carousel {
   .carousel-control-prev {
-    left: -100px;
+    left: -70px;
+    margin-left: 5px;
+    filter: brightness(0.8);
+    opacity: 0.7;
+    z-index: 1;
+    width: 5%;
   }
 
   .carousel-control-next {
-    right: -100px;
+    right: -70px;
+    margin-right: 5px;
+    filter: brightness(0.8);
+    opacity: 0.7;
+    z-index: 1;
+    width: 5%;
   }
 }
 
@@ -479,4 +489,9 @@ p {
     z-index: 1;
     width: 5%;
   }
+}
+.work{
+  padding: auto;
+  margin: auto;
+  justify-content: center;
 }

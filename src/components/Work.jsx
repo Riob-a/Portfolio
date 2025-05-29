@@ -41,6 +41,7 @@ function Work() {
 
     return (
         <Container>
+            <div className="work">
             <Carousel interval={10000} indicators={false} className="outer-carousel">
                 {/* Project 1 */}
                 <Carousel.Item>
@@ -291,6 +292,7 @@ function Work() {
                 </Carousel.Item>
 
             </Carousel>
+            </div>
         </Container>
     )
 }
