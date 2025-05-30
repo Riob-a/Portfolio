@@ -289,7 +289,7 @@ p {
   /* flex-direction: column; */
 }
 
-.custom-tabs .nav-link :hover {
+.custom-tabs .nav-link:hover {
   /* background: #d0e0a2; */
   /* color: #d0e0a2; */
   background: linear-gradient(45deg, #71997f, #71997f, #d0e0a2, #BACA8B, #71997f, #71997f, #d0e0a2, #BACA8B, #71997f, #71997f);
@@ -301,7 +301,9 @@ p {
   /* text-fill-color: transparent; */
   transition: background-color 0.3s, color 0.3s;
   transform: scale(1.1);
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
+  transition: transform 0.4s cubic-bezier(0.25, 1.25, 0.5, 1), background-color 0.3s, color 0.3s;
+
 }
 
 .custom-tabs .nav-link {
@@ -315,7 +317,9 @@ p {
   align-items: center;
   gap: 8px;
   font-size: 1rem;
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
+  transition: transform 0.4s cubic-bezier(0.25, 1.25, 0.5, 1), background-color 0.3s, color 0.3s;
+
 
 }
 
