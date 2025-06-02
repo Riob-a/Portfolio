@@ -1,9 +1,13 @@
 import { Container, Row, Col, Card, Button, Carousel } from "react-bootstrap";
 import { FaGithub, FaReact, FaPython } from "react-icons/fa";
 import image1 from '../components/images/Derricks Demo 1.jpg';
-import image3 from "../components/images/Derricks Demo 3.jpg"
-import readfinder1 from "../components/images/readfinder1.jpg"
-import readfinder2 from "../components/images/readfinder2.jpg"
+import image3 from "../components/images/Derricks Demo 3.jpg";
+import demo4 from "../components/images/Derricks Demo 4.jpg";
+import demo5 from "../components/images/Derricks Demo 5.jpg";
+import demo6 from "../components/images/Derricks Demo 6.jpg";
+import demo61 from "../components/images/Derricks Demo 6.1.jpg";
+import readfinder1 from "../components/images/readfinder1.jpg";
+import readfinder2 from "../components/images/readfinder2.jpg";
 import blogers from '../components/images/blogers.jpg';
 import blogers2 from '../components/images/blogers2.jpg';
 import blogers3 from "../components/images/blogers3.jpg";
@@ -87,7 +91,16 @@ function Work() {
                                         <img className="d-block w-100 rounded-4 carousel-image" src={image1} alt="Demo Screenshot 1" />
                                     </Carousel.Item>
                                     <Carousel.Item>
-                                        <img className="d-block w-100 rounded-4 carousel-image" src={image3} alt="Demo Screenshot 2" />
+                                        <img className="d-block w-100 rounded-4 carousel-image" src={demo4} alt="Demo Screenshot 2" />
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img className="d-block w-100 rounded-4 carousel-image" src={demo5} alt="Demo Screenshot 2" />
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img className="d-block w-100 rounded-4 carousel-image" src={demo6} alt="Demo Screenshot 2" />
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img className="d-block w-100 rounded-4 carousel-image" src={demo61} alt="Demo Screenshot 2" />
                                     </Carousel.Item>
                                 </Carousel>
                             </Card>
