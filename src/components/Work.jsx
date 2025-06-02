@@ -8,9 +8,13 @@ import blogers from '../components/images/blogers.jpg';
 import blogers2 from '../components/images/blogers2.jpg';
 import blogers3 from "../components/images/blogers3.jpg";
 import blogers4 from "../components/images/blogers4.jpg";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import  Admin1 from  "../components/images/demo admin 1.jpg";
+import  Admin2 from  "../components/images/demo admin 2.jpg";
+import  Admin3 from  "../components/images/demo admin 3.jpg";
+import  Admin4 from  "../components/images/demo admin 4.jpg";
+import  Admin51 from  "../components/images/demo admin 5.1.jpg";
+import  Admin52 from  "../components/images/demo admin 5.2.jpg";
+
 // import "../pages/Home.css"
 
 function Work() {
@@ -270,11 +274,24 @@ function Work() {
                             <Card className="rounded-4 project-card mt-4">
                                 <Carousel className="inner-carousel">
                                     <Carousel.Item>
-                                        <img className=" d-block w-100 rounded-4 carousel-image" src={image1} alt="Demo Screenshot 1" />
+                                        <img className=" d-block w-100 rounded-4 carousel-image" src={Admin1} alt="Demo Screenshot 1" />
                                     </Carousel.Item>
                                     <Carousel.Item>
-                                        <img className=" d-block w-100 rounded-4 carousel-image" src="" alt="Demo Screenshot 2" />
+                                        <img className=" d-block w-100 rounded-4 carousel-image" src={Admin2} alt="Demo Screenshot 2" />
                                     </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img className=" d-block w-100 rounded-4 carousel-image" src={Admin3} alt="Demo Screenshot 2" />
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img className=" d-block w-100 rounded-4 carousel-image" src={Admin4} alt="Demo Screenshot 2" />
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img className=" d-block w-100 rounded-4 carousel-image" src={Admin51} alt="Demo Screenshot 2" />
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <img className=" d-block w-100 rounded-4 carousel-image" src={Admin52} alt="Demo Screenshot 2" />
+                                    </Carousel.Item>
+                                    
                                 </Carousel>
                             </Card>
                             <br />
