@@ -8,12 +8,12 @@ import blogers from '../components/images/blogers.jpg';
 import blogers2 from '../components/images/blogers2.jpg';
 import blogers3 from "../components/images/blogers3.jpg";
 import blogers4 from "../components/images/blogers4.jpg";
-import  Admin1 from  "../components/images/demo admin 1.jpg";
-import  Admin2 from  "../components/images/demo admin 2.jpg";
-import  Admin3 from  "../components/images/demo admin 3.jpg";
-import  Admin4 from  "../components/images/demo admin 4.jpg";
-import  Admin51 from  "../components/images/demo admin 5.1.jpg";
-import  Admin52 from  "../components/images/demo admin 5.2.jpg";
+import  Admin1 from  "../components/images/demo Admin 1.jpg";
+import  Admin2 from  "../components/images/demo Admin 2.jpg";
+import  Admin3 from  "../components/images/demo Admin 3.jpg";
+import  Admin4 from  "../components/images/demo Admin 4.jpg";
+import  Admin51 from  "../components/images/demo Admin 5.1.jpg";
+import  Admin52 from  "../components/images/demo Admin 5.2.jpg";
 
 // import "../pages/Home.css"
 
