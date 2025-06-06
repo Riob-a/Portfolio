@@ -178,8 +178,8 @@ function Work() {
                              <Row>
                                 <Card.Text as="h5" className="text-center">
                                     <FaGithub /> Github Links : 
-                                    <Card.Link href="https://github.com/Riob-a/Demo-Project-F-end"> Frontend</Card.Link>
-                                    <Card.Link href="https://github.com/Riob-a/Demo-Project-Backend">Backend</Card.Link>
+                                    <Card.Link href="https://github.com/Riob-a/blogers-front-end"> Frontend</Card.Link>
+                                    <Card.Link href="https://github.com/Riob-a/blogers-backend">Backend</Card.Link>
                                     <hr />
                                 </Card.Text>
                             </Row>
