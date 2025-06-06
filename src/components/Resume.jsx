@@ -92,7 +92,7 @@ function Resume() {
                     <Button variant="" href="/Derrick Rioba Ongwae Software-engineer(Re).pdf" download className="button visit rounded-3 me-4 m-2">
                         Download Resume
                     </Button>
-                    <Button variant="" href="/Derrick Rioba Ongwae Software- engineer(C).pdf" download className="button visit  rounded-3 me-4 m-2">
+                    <Button variant="" href="/DERRICK RIOBA ONGWAE Software - engineer(C).pdf" download className="button visit  rounded-3 me-4 m-2">
                         Download C.V
                     </Button>
                 </Col>
