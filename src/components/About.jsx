@@ -5,12 +5,10 @@ import image1 from '../components/images/Derricks Demo 1.jpg';
 
 function About() {
     return (
-        <Container>
-            <Row className="intro-section my-5">
+        <div className="about">
+            <Row className="intro-section ">
                 <Col >
                     <Card className="h-100  intro rounded-5 d-flex flex-column justify-content-end p-3 gen-card" data-aos="fade-up" data-aos-duration="800" >
-                        {/* <Card.Img variant="" src="" alt="Qorry" rounded className="w-100 grayscale" /> */}
-                        {/* <Card.ImgOverlay className="d-flex flex-column justify-content-end"> */}
                         <h2 className="mt-3 about-title">Hello, My name is Derrick</h2>
                         <p className="about-description small">
                             With an ICT background, I’m a dedicated web developer who constantly
@@ -20,7 +18,7 @@ function About() {
                     </Card>
                 </Col>
 
-                <Col md={8}>
+                <Col md={8} >
                     <Row className="intro mt-4">
                         <h3 className="mb-4" data-aos="fade-right" data-aos-duration="800">Introduction</h3>
                         <Card className="rounded-5 p-4 gen-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
@@ -78,7 +76,7 @@ function About() {
                     </Row>
                 </Col>
             </Row>
-        </Container>
+        </div>
     );
 }
 export default About;

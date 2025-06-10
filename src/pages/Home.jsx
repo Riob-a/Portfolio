@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from "react";
 import { Container, Row, Col, Card, Image, Tabs, Tab } from "react-bootstrap";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import svg from "../components/images/coding-terminal-svgrepo-com.svg"
 
 import About from "../components/About";
 import Resume from "../components/Resume";
@@ -19,37 +20,39 @@ function Home() {
     }, []);
 
     return (
-        <Container className="code-body mb-5">
+        <div className="code-body mb-5">
             {/* header */}
-            <Container>
+            {/* <Container> */}
+            <Container fluid className="header-container">
                 <hr />
                 <Row className="page-top ">
                     <div className="header">
-                        <div className="page-top-left">Derrick R Ongwae</div>
+                        <div className="page-top-left">
+                            <img src={svg} className="svg" /> Derrick R Ongwae</div>
                         <div className="page-top-right">Portfolio</div>
                     </div>
                 </Row>
                 <hr />
-
-                <Row className="header-section mb-5 mt-5 flex-nowrap">
-                    <Col xs='auto' className="header-text" data-aos="fade-up" data-aos-duration="800" data-aos-delay="">
-                        <Card className="intro-sidebar">
-                            {/* <Card.Text as="h1" className="sidebar-text" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400" > PORTFOLIO</Card.Text> */}
-                        </Card>
-                    </Col>
-
-                    <Col className="header-image" xs={10}>
-                        <Card className="rounded-5  d-flex justify-content-center align-items-center position-relative" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" >
-                            <Card.Text as="h1" className="portfolio-title" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400" > PORTFOLIO</Card.Text>
-                            <div className="portfolio-footer small" data-aos="fade-in" data-aos-delay="600">2025</div>
-                        </Card>
-                    </Col>
-
-                    <Col xs='auto' className="header-text" data-aos="fade-up" data-aos-duration="800" data-aos-delay="">
-                        <Card className="intro-sidebar2"></Card>
-                    </Col>
-                </Row>
             </Container>
+            <Row className="header-section mb-5 mt-5 flex-nowrap">
+                <Col xs='auto' className="header-text" data-aos="fade-up" data-aos-duration="800" data-aos-delay="">
+                    <Card className="intro-sidebar">
+                        {/* <Card.Text as="h1" className="sidebar-text" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400" > PORTFOLIO</Card.Text> */}
+                    </Card>
+                </Col>
+
+                <Col className="header-image" xs={10}>
+                    <Card className="rounded-5  d-flex justify-content-center align-items-center position-relative" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" >
+                        <Card.Text as="h1" className="portfolio-title" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400" > PORTFOLIO</Card.Text>
+                        <div className="portfolio-footer small" data-aos="fade-in" data-aos-delay="600">2025</div>
+                    </Card>
+                </Col>
+
+                <Col xs='auto' className="header-text" data-aos="fade-up" data-aos-duration="800" data-aos-delay="">
+                    <Card className="intro-sidebar2"></Card>
+                </Col>
+            </Row>
+            {/* </Container> */}
             <hr />
 
             {/* tabs */}
@@ -86,7 +89,7 @@ function Home() {
 
             </Tabs>
             <br />
-        </Container>
+        </div>
     );
 }
 export default Home;

@@ -3,7 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo+Black&family=Lilita+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rowdies:wght@300;400;700&family=Spicy+Rice&family=Unbounded:wght@200..900&display=swap');
 
 /* fonts */
-
+.svg{
+  height: 25px;
+  width: 25px;
+  background-color: #4d6957;
+  color:#a23026;
+}
 h1 {
   font-family: "Unbounded", sans-serif;
   font-optical-sizing: auto;
@@ -99,6 +104,7 @@ p {
 
 .header {
   display: flex;
+  margin: auto;
   justify-content: space-between;
   align-items: center;
   /* padding: 1rem 2rem; */
@@ -209,21 +215,21 @@ p {
 
 .intro-sidebar {
   /* border: 2px solid #706d42; */
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 30px;
   border-bottom-right-radius: 10px;
-  min-width: 90px;
+  min-width: 80px;
   max-width: 150px;
 }
 
 .intro-sidebar2 {
   /* border: 2px solid #706d42; */
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  min-width: 90px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  min-width: 80px;
   max-width: 150px;
 }
 
@@ -269,6 +275,32 @@ p {
   background-size: 200% 100%;
   animation: gradientWave 10s ease infinite;
   transition: background-color 0.3s, color 0.3s;
+}
+
+.intro-section {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 10px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.get-in-touch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
 }
 
 .icons {
@@ -337,21 +369,18 @@ p {
 }
 
 .custom-tabs .nav-link.active {
-  color: #BACA8B;
-  background: #71997f;
-}
-
-.custom-tabs .nav-link.active:hover {
   background: linear-gradient(45deg, #71997f, #71997f, #d0e0a2, #BACA8B, #71997f, #71997f, #d0e0a2, #BACA8B, #71997f, #71997f);
   background-size: 200% 100%;
   animation: gradientWave 10s ease infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  transform: scale(1.1);
-  /* transition: all 0.3s ease; */
-  transition: transform 0.4s cubic-bezier(0.25, 1.25, 0.5, 1), background-color 0.3s, color 0.3s;
+  border: #4d6957 2px solid;
+
+  /* background: #71997f; */
 }
+
+/*  */
 
 .custom-tabs .nav-link.active .tab-icon {
   background-color: #c1392d;
@@ -363,8 +392,22 @@ p {
   margin-bottom: 50%;
 }
 
+.about {
+  align-content: center;
+  padding: 1%;
+
+}
+
 #caption-img {
   justify-content: flex-end;
+}
+
+.resume {
+  align-content: center;
+  padding: 5%;
+  margin: auto;
+  /* display: flex; */
+  /* flex-direction: column; */
 }
 
 .qualifications .card {
@@ -385,6 +428,8 @@ p {
 }
 
 .expertise {
+  margin-left: 2px;
+  margin-right: 2px;
   border: 2px solid #706d42;
   border-radius: 15px;
 }

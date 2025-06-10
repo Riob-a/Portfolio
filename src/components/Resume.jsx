@@ -1,10 +1,10 @@
-import { Container, Row, Col, Card, Button} from "react-bootstrap";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
 
 function Resume() {
     return (
-        <Container>
+        <div className="resume">
             <Row className="qualifications my-5">
-                <Col className="expirience p-4" data-aos="fade-up" data-aos-duration="800" md={4}>
+                <Col className="expirience p-4" data-aos="fade-up" data-aos-duration="800" >
                     <h4 className="mb-4">Experience</h4>
                     <hr />
                     <Card className="rounded-5 gen-card">
@@ -28,7 +28,7 @@ function Resume() {
                     </Card>
                 </Col>
 
-                <Col className="expertise p-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" md={4}>
+                <Col className="expertise p-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" >
                     <h4 className="mb-4">Expertise</h4>
                     {/* <p>Logo, Brand Identity, Packaging, Poster & Editorial, Social Media Post, 3D & Motion Graphic</p> */}
                     <hr />
@@ -53,13 +53,13 @@ function Resume() {
                             <span key={skill} className="badge badge-color ">{skill}</span>
                         ))}
                     </div>
-                    {/* <hr />
-                                    <h5 className="mt-3">Soft Skills</h5>
-                                    <div className="d-flex flex-wrap gap-2">
-                                        {["Creativity", "Teamwork", "Time Management", "Flexibility", "Communication"].map(skill => (
-                                            <span key={skill} className="badge bg-info text-dark">{skill}</span>
-                                        ))}
-                                    </div> */}
+                    <hr />
+                    <h5 className="mt-3">Certifications</h5>
+                    <div className="d-flex flex-wrap gap-2">
+                        {["Data Analysis with python", "Software Development Essentials", "Teamwork", "Problem-solving"].map(skill => (
+                            <span key={skill} className="badge badge-color">{skill}</span>
+                        ))}
+                    </div>
                 </Col>
 
                 <Col className="education p-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400" md={4}>
@@ -89,15 +89,15 @@ function Resume() {
             <Row>
                 <Col className="certificates p-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
                     <h4 className="mb-4">Certificates</h4>
-                    <Button variant="" href="/Derrick Rioba Ongwae Software-engineer(Re).pdf" download className="button visit rounded-3 me-4 m-2">
+                    {/* <Button variant="" href="/Derrick Rioba Ongwae Software-engineer(Re).pdf" download className="button visit rounded-3 me-4 m-2">
                         Download Resume
-                    </Button>
+                    </Button> */}
                     <Button variant="" href="/DERRICK RIOBA ONGWAE Software - engineer(C).pdf" download className="button visit  rounded-3 me-4 m-2">
                         Download C.V
                     </Button>
                 </Col>
             </Row>
-        </Container>
+        </div>
     )
 }
 export default Resume;
