@@ -37,7 +37,7 @@ function Home() {
             <Row className="header-section mb-5 mt-5 flex-nowrap">
                 <Col xs='auto' className="header-text" data-aos="fade-up" data-aos-duration="800" data-aos-delay="">
                     <Card className="intro-sidebar">
-                        {/* <Card.Text as="h1" className="sidebar-text" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400" > PORTFOLIO</Card.Text> */}
+                        <Card.Text as="h1" className="sidebar-text" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400" > PORTFOLIO</Card.Text>
                     </Card>
                 </Col>
 
@@ -49,7 +49,9 @@ function Home() {
                 </Col>
 
                 <Col xs='auto' className="header-text" data-aos="fade-up" data-aos-duration="800" data-aos-delay="">
-                    <Card className="intro-sidebar2"></Card>
+                    <Card className="intro-sidebar2">
+                        <Card.Text as="h1" className="sidebar-text" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400" > PORTFOLIO</Card.Text>
+                    </Card>
                 </Col>
             </Row>
             {/* </Container> */}
