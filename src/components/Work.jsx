@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Card, Button, Carousel, Modal } from "react-bootstrap";
 import { FaGithub, FaReact, FaPython } from "react-icons/fa";
 import image1 from '../components/images/Derricks Demo 1.jpg';
@@ -25,6 +25,7 @@ import Admin52 from "../components/images/demo Admin 5.2.jpg";
 function Work() {
     const [showModal, setShowModal] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
+    const [carouselInterval, setCarouselInterval ] = useState(false);
 
     const handleImageClick = (imageSrc) => {
         setSelectedImage(imageSrc);
@@ -58,11 +59,26 @@ function Work() {
             },
         ],
     };
+    useEffect(() => {
+        const updateInterval = () => {
+            if (window.innerWidth < 768) {
+                setCarouselInterval(10000);
+            }else {
+                setCarouselInterval(20000);
+            }
+        }
+        updateInterval();
+        window.addEventListener('resize', updateInterval)
+
+        return () => {
+            window.removeEventListener('resize', updateInterval);
+        };
+    }, []);
 
     return (
         <Container>
             <div className="work">
-                <Carousel interval={10000} indicators={false} className="outer-carousel">
+                <Carousel interval={carouselInterval} indicators={false} className="outer-carousel">
                     {/* Project 1 */}
                     <Carousel.Item>
                         <Card className="rounded-4 mb-5 project-card">
@@ -76,23 +92,23 @@ function Work() {
                                         <Card className=" project-card-l mt-2"  >
                                             <Card.Text as="h5" className="text-center">Accomplishments</Card.Text>
                                             <hr />
-                                            <ul>
+                                            <ol>
                                                 <li>Facilitates User Registration and sign in</li>
                                                 <li>Allows user to like and submit artwork</li>
                                                 <li>Allows user to view and edit their profile</li>
-                                            </ul>
+                                            </ol>
                                         </Card>
                                     </Col>
                                     <Col>
                                         <Card className=" project-card-r mt-2" >
                                             <Card.Text as="h5" className="text-center">Tools</Card.Text>
                                             <hr />
-                                            <ul>
-                                                <li><FaReact /> React</li>
-                                                <li><FaPython /> Flask Debug</li>
+                                            <ol>
+                                                <li> React</li>
+                                                <li> Flask Debug</li>
                                                 <li>Axios</li>
                                                 <li>Cloudinary</li>
-                                            </ul>
+                                            </ol>
                                         </Card>
                                     </Col>
                                 </Row>
@@ -137,23 +153,23 @@ function Work() {
                                         <Card className=" project-card-l mt-2"  >
                                             <Card.Text as="h5" className="text-center">Accomplishments</Card.Text>
                                             <hr />
-                                            <ul>
+                                            <ol>
                                                 <li>Facilitates User Registration and sign in</li>
                                                 <li>Allows user to like and submit blogs</li>
                                                 <li>Allows user to view and edit their profile</li>
-                                            </ul>
+                                            </ol>
                                         </Card>
                                     </Col>
                                     <Col>
                                         <Card className=" project-card-r mt-2" >
                                             <Card.Text as="h5" className="text-center">Tools</Card.Text>
                                             <hr />
-                                            <ul>
-                                                <li><FaReact /> React</li>
-                                                <li><FaPython /> Flask Debug</li>
+                                            <ol>
+                                                <li> React</li>
+                                                <li> Flask Debug</li>
                                                 <li>Axios</li>
                                                 <li>Cloudinary</li>
-                                            </ul>
+                                            </ol>
                                         </Card>
                                     </Col>
                                 </Row>
@@ -199,23 +215,23 @@ function Work() {
                                         <Card className=" project-card-l mt-2"  >
                                             <Card.Text as="h5" className="text-center">Accomplishments</Card.Text>
                                             <hr />
-                                            <ul>
+                                            <ol>
                                                 <li>Facilitates User Registration and sign in</li>
                                                 <li>Allows user to like and submit artwork</li>
                                                 <li>Allows user to view and edit their profile</li>
-                                            </ul>
+                                            </ol>
                                         </Card>
                                     </Col>
                                     <Col>
                                         <Card className=" project-card-r mt-2" >
                                             <Card.Text as="h5" className="text-center">Tools</Card.Text>
                                             <hr />
-                                            <ul>
-                                                <li><FaReact /> React</li>
-                                                <li><FaPython /> Flask Debug</li>
+                                            <ol>
+                                                <li> React</li>
+                                                <li> Flask Debug</li>
                                                 <li>Axios</li>
                                                 <li>Cloudinary</li>
-                                            </ul>
+                                            </ol>
                                         </Card>
                                     </Col>
                                 </Row>
@@ -256,23 +272,23 @@ function Work() {
                                         <Card className=" project-card-l mt-2"  >
                                             <Card.Text as="h5" className="text-center">Accomplishments</Card.Text>
                                             <hr />
-                                            <ul>
+                                            <ol>
                                                 <li>Facilitates User Registration and sign in</li>
                                                 <li>Allows Admin to delete likes and  artwork</li>
                                                 <li>Allows Admin to view and manage profiles</li>
-                                            </ul>
+                                            </ol>
                                         </Card>
                                     </Col>
                                     <Col>
                                         <Card className=" project-card-r mt-2" >
                                             <Card.Text as="h5" className="text-center">Tools</Card.Text>
                                             <hr />
-                                            <ul>
-                                                <li><FaReact /> React</li>
-                                                <li><FaPython /> Flask Debug</li>
+                                            <ol>
+                                                <li> React</li>
+                                                <li> Flask Debug</li>
                                                 <li>Axios</li>
                                                 <li>Cloudinary</li>
-                                            </ul>
+                                            </ol>
                                         </Card>
                                     </Col>
                                 </Row>
@@ -303,12 +319,12 @@ function Work() {
                 </Carousel>
 
                 {/* Modal for full image view */}
-                <Modal show={showModal} onHide={handleCloseModal} centered size='lg'>
-                    <Modal.Body className="p-0 rounded-4">
+                <Modal show={showModal} onHide={handleCloseModal} centered size='lg' className="background" >
+                    <Modal.Body className="p-1 rounded-5" >
                         <img src={selectedImage}
                             alt="Full View"
                             className="d-block w-100"
-                            style={{ maxWidth: '100%', maxHeight: '80vh', objectFit: 'cover', borderRadius: '' }}
+                            style={{ maxWidth: '100%', maxHeight: '80vh', objectFit: 'cover',borderTopRightRadius:'0.5rem', borderTopLeftRadius:'0.5rem' }}
                         />
                     </Modal.Body>
                     <Modal.Footer>
