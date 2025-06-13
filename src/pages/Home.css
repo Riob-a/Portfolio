@@ -11,9 +11,16 @@
 }
 
 .svg-coding {
-  height: 250px;
-  width: 250px;
+  height: auto;
+  max-width: 100%;
   padding: 20px;
+}
+
+@media (min-width: 769px) {
+  .svg-coding {
+    max-width: 250px;
+    height: auto;
+  }
 }
 
 h1 {
@@ -367,6 +374,19 @@ p {
 
 }
 
+/* .intro-container {
+} */
+@media (max-width: 768px) {
+  .intro-container figure {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .intro-container figure figcaption {
+    margin-right: 0 !important;
+    margin-bottom: 20px;
+  }
+}
 .get-in-touch {
   display: flex;
   flex-direction: column;

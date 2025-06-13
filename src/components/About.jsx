@@ -28,7 +28,7 @@ function About() {
                     <Row className="intro mt-4">
                         <h3 className="mb-4" data-aos="fade-right" data-aos-duration="800">Introduction</h3>
                         <Container>
-                            <Card className="rounded-5 p-4 gen-card " data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                            <Card className="rounded-5 p-4 intro-container gen-card " data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                                 <h3>A Software Engineer based in Nairobi</h3>
                                 <Figure className="d-flex align-items-center">
                                     <Figure.Caption className="me-4">
