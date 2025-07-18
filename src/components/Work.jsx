@@ -19,6 +19,10 @@ import Admin3 from "../components/images/demo Admin 3.jpg";
 import Admin4 from "../components/images/demo Admin 4.jpg";
 import Admin51 from "../components/images/demo Admin 5.1.jpg";
 import Admin52 from "../components/images/demo Admin 5.2.jpg";
+import Art1 from '../components/images/art-portfolio1.jpg';
+import Art2 from '../components/images/art-portfolio2.jpg'; 
+import Art3 from '../components/images/art-portfolio3.jpg';
+import Art4 from '../components/images/art-portfolio4.jpg';
 
 // import "../pages/Home.css"
 
@@ -313,6 +317,61 @@ function Work() {
                                     </Card.Text>
                                 </Row>
                                 <Button variant="" href="https://demo-project-admin-wheat.vercel.app/" className="button visit">Visit</Button>
+                            </Card.Body>
+                        </Card>
+                    </Carousel.Item>
+
+                    <Carousel.Item>
+                        <Card className="rounded-4 mb-5 project-card">
+                            <Card.Body>
+                                <Card.Title as="h2" className="text-center mb-4">Art Portfolio</Card.Title>
+                                <hr />
+                                <Card.Text className="text-center">My Art Portfolio.</Card.Text>
+                                <hr />
+                                <Row>
+                                    <Col>
+                                        <Card className=" project-card-l mt-2"  >
+                                            <Card.Text as="h5" className="text-center">Accomplishments</Card.Text>
+                                            <hr />
+                                            <ol>
+                                                <li>Displays artwork and facilitates communication with potential clients through a contact form.</li>
+                                            </ol>
+                                        </Card>
+                                    </Col>
+                                    <Col>
+                                        <Card className=" project-card-r mt-2" >
+                                            <Card.Text as="h5" className="text-center">Tools</Card.Text>
+                                            <hr />
+                                            <ol>
+                                                <li> React</li>
+                                                <li>Next.js</li>
+                                                <li> Flask Debug/ Flask</li>
+                                                <li> Axios</li>
+                                            </ol>
+                                        </Card>
+                                    </Col>
+                                </Row>
+
+                                <Card className="rounded-4 project-card mt-4">
+                                    <Carousel className="inner-carousel">
+                                        {[Art1, Art2, Art3, Art4].map((image, index) => (
+                                            <Carousel.Item key={index}>
+                                                <img className="d-block w-100 rounded-4 carousel-image" src={image} alt={`Demo Screenshot ${index + 1}`} onClick={() => handleImageClick(image)} style={{ cursor: 'pointer' }} />
+                                            </Carousel.Item>
+                                        ))}
+
+                                    </Carousel>
+                                </Card>
+                                <br />
+                                <Row>
+                                    <Card.Text as="h5" className="text-center">
+                                        <FaGithub /> Github Links :
+                                        <Card.Link href="https://github.com/Riob-a/Art-portfoilo"> Frontend</Card.Link>
+                                        <Card.Link href="https://github.com/Riob-a/Art-portfoilo-backend">Backend</Card.Link>
+                                        <hr />
+                                    </Card.Text>
+                                </Row>
+                                <Button variant="" href="https://art-portfoilo.vercel.app/" className="button visit">Visit</Button>
                             </Card.Body>
                         </Card>
                     </Carousel.Item>
