@@ -89,7 +89,7 @@ function Work() {
                             <Card.Body>
                                 <Card.Title as="h2" className="text-center mb-4">Demo-App</Card.Title>
                                 <hr />
-                                <Card.Text className="text-center">A demo project that acts as a test-bed for any new techniques I learn.</Card.Text>
+                                <Card.Text className="text-center">A demo project that I used to test my proficiency with react.</Card.Text>
                                 <hr />
                                 <Row>
                                     <Col>
@@ -149,7 +149,7 @@ function Work() {
                                 <Card.Text className="text-center">
                                     A simple and intuitive blog site
                                     that allows users to like,comment,
-                                    and write blogs as well as read them learn.
+                                    and write blogs as well as read them.
                                 </Card.Text>
                                 <hr />
                                 <Row>
@@ -326,7 +326,7 @@ function Work() {
                             <Card.Body>
                                 <Card.Title as="h2" className="text-center mb-4">Art Portfolio</Card.Title>
                                 <hr />
-                                <Card.Text className="text-center">My Art Portfolio.</Card.Text>
+                                <Card.Text className="text-center">My Art Portfolio. Displays some of the work I've done.</Card.Text>
                                 <hr />
                                 <Row>
                                     <Col>
