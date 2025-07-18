@@ -82,7 +82,7 @@ function Home() {
                 <Tab eventKey="work"
                     title={
                         <span className="d-flex align-items-center gap-2">
-                            <span className="tab-icon"><FaPen /></span> Work
+                            <span className="tab-icon"><FaPen /></span> Projects
                         </span>
                     }>
                     <hr />
